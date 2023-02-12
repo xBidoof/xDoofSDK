@@ -1,0 +1,10 @@
+C:\Users\didid\Desktop\xDoof\SDK\NetFramework\xDoofSDK\xDoofSDK\bin\Release\xDoofSDK.dll
+C:\Users\didid\Desktop\xDoof\SDK\NetFramework\xDoofSDK\xDoofSDK\bin\Release\xDoofSDK.pdb
+C:\Users\didid\Desktop\xDoof\SDK\NetFramework\xDoofSDK\xDoofSDK\bin\Release\xDoofSDK.xml
+C:\Users\didid\Desktop\xDoof\SDK\NetFramework\xDoofSDK\xDoofSDK\obj\Release\xDoofSDK.vbproj.AssemblyReference.cache
+C:\Users\didid\Desktop\xDoof\SDK\NetFramework\xDoofSDK\xDoofSDK\obj\Release\xDoofSDK.Resources.resources
+C:\Users\didid\Desktop\xDoof\SDK\NetFramework\xDoofSDK\xDoofSDK\obj\Release\xDoofSDK.vbproj.GenerateResource.cache
+C:\Users\didid\Desktop\xDoof\SDK\NetFramework\xDoofSDK\xDoofSDK\obj\Release\xDoofSDK.vbproj.CoreCompileInputs.cache
+C:\Users\didid\Desktop\xDoof\SDK\NetFramework\xDoofSDK\xDoofSDK\obj\Release\xDoofSDK.dll
+C:\Users\didid\Desktop\xDoof\SDK\NetFramework\xDoofSDK\xDoofSDK\obj\Release\xDoofSDK.xml
+C:\Users\didid\Desktop\xDoof\SDK\NetFramework\xDoofSDK\xDoofSDK\obj\Release\xDoofSDK.pdb

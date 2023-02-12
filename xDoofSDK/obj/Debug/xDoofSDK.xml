@@ -1,0 +1,3174 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+xDoofSDK
+</name>
+</assembly>
+<members>
+<member name="T:xDoofSDK.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:xDoofSDK.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:xDoofSDK.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:xDoofSDK.Draw.DrawPosition">
+ <summary>
+ Initialise une nouvelle structure de <see cref="T:xDoofSDK.Draw.DrawPosition"/> qui défini des points X, Y et Z
+ </summary>
+</member>
+<member name="T:xDoofSDK.Draw.DrawColor">
+ <summary>
+ Initialise une nouvelle structure de <see cref="T:xDoofSDK.Draw.DrawColor"/>.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Draw.DrawPoint">
+ <summary>
+ Initialise une nouvelle structure de <see cref="T:xDoofSDK.Draw.DrawPoint"/> qui défini des points X et Y.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Processus.Processus">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Processus.Processus"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Processus.Processus.ProcessusOpen(System.String)">
+ <summary>
+ Ouvre un processus en cours d'exécution sur l'ordinateur.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Processus.Processus.GetProcessusByName(System.String,System.Boolean)">
+ <summary>
+ Récupère un <see cref="T:System.Diagnostics.Process"/> selon le nom du processus spécifié.
+ </summary><returns>Retourne Nothing si non trouvé</returns>
+</member>
+<member name="M:xDoofSDK.Processus.Processus.GetProcessusByID(System.Int32,System.String)">
+ <summary>
+ Récupère un <see cref="T:System.Diagnostics.Process"/> selon l'identificateur du processus.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Processus.Processus.StartProcessus(System.String,System.String)">
+ <summary>
+ Lance un processus demandé.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Processus.Processus.ProcessusClose(System.String)">
+ <summary>
+ Arrête un processus demandé.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Processus.Processus.ProcessusCloseQuery(System.String)">
+ <summary>
+ Arrête un processus spécifié avec le nom et extension avec la méthode execquery.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Processus.ProcessusAction">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Processus.ProcessusAction"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Processus.ProcessusAction.KillProcessus">
+ <summary>
+ Arrête immédiatement le processus si il est en cours d'exécution.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Processus.ProcessusAction.Start">
+ <summary>
+ Démarre (ou démarre une nouvelle instance) du processus spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Processus.ProcessusAction.ReleaseResources">
+ <summary>
+ Libères toutes les ressources associé à ce composant.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Processus.ProcessusInfo">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Processus.ProcessusInfo"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Processus.ProcessusInfo.SetProcess(System.String)">
+ <summary>
+ Spécifie un processus a travaillé dans <see cref="T:xDoofSDK.Processus.ProcessusInfo"/>.
+ </summary>
+</member>
+<member name="P:xDoofSDK.Processus.ProcessusInfo.GetID">
+ <summary>
+ Récupère l'identifiant unique du processus.
+ </summary>
+</member>
+<member name="P:xDoofSDK.Processus.ProcessusInfo.ProcessusName">
+ <summary>
+ Récupère le nom du processus.
+ </summary>
+</member>
+<member name="P:xDoofSDK.Processus.ProcessusInfo.GetSessionID">
+ <summary>
+ Récupère l'identificateur du processus de session Terminal Server du processus associé.
+ </summary>
+</member>
+<member name="P:xDoofSDK.Processus.ProcessusInfo.GetProcess">
+ <summary>
+ Récupère le <see cref="T:System.Diagnostics.Process"/> spécifié.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Processus.ProcessusMemory">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Processus.ProcessusMemory"/>.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Algorithm.UndoRedo">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Algorithm.UndoRedo"/>.
+ </summary>
+ <remarks>Contrôle pris en charge : <see cref="T:System.Windows.Forms.TextBox"/> | <see cref="T:System.Windows.Forms.RichTextBox"/> | <see cref="T:System.Windows.Forms.Label"/>.</remarks>
+</member>
+<member name="M:xDoofSDK.Algorithm.UndoRedo.AddUndo(System.Windows.Forms.TextBox)">
+ <summary>
+ Ajoute le texte du <see cref="T:System.Windows.Forms.TextBox"/> à la file de l'algorithme.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.UndoRedo.AddUndo(System.Windows.Forms.RichTextBox)">
+ <summary>
+ Ajoute le texte du <see cref="T:System.Windows.Forms.RichTextBox"/> à la file de l'algorithme.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.UndoRedo.AddUndo(System.Windows.Forms.Label)">
+ <summary>
+ Ajoute le texte du <see cref="T:System.Windows.Forms.Label"/> à la file de l'algorithme.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.UndoRedo.Undo(System.Windows.Forms.TextBox)">
+ <summary>
+ Reviens en arrière si possible et remplace le texte présent du contrôle <see cref="T:System.Windows.Forms.TextBox"/> par le texte saisie par avant.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.UndoRedo.Undo(System.Windows.Forms.RichTextBox)">
+ <summary>
+ Reviens en arrière si possible et remplace le texte présent du contrôle <see cref="T:System.Windows.Forms.RichTextBox"/> par le texte saisie par avant.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.UndoRedo.Undo(System.Windows.Forms.Label)">
+ <summary>
+ Reviens en arrière si possible et remplace le texte présent du contrôle <see cref="T:System.Windows.Forms.Label"/> par le texte saisie par avant.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.UndoRedo.Redo(System.Windows.Forms.TextBox)">
+ <summary>
+ Reviens en avant si possible et remplace le texte présent du contrôle <see cref="T:System.Windows.Forms.TextBox"/> par le texte saisie par avant.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.UndoRedo.Redo(System.Windows.Forms.RichTextBox)">
+ <summary>
+ Reviens en avant si possible et remplace le texte présent du contrôle <see cref="T:System.Windows.Forms.RichTextBox"/> par le texte saisie par avant.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.UndoRedo.Redo(System.Windows.Forms.Label)">
+ <summary>
+ Reviens en avant si possible et remplace le texte présent du contrôle <see cref="T:System.Windows.Forms.Label"/> par le texte saisie par avant.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.UndoRedo.ClearUndoRedo">
+ <summary>
+ Efface la liste du UndoRedo.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.UndoRedo.ClearAll">
+ <summary>
+ Efface la liste du UndoRedo et remet à zéro l'initialisation de la classe.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.UndoRedo.GetAllList(System.String)">
+ <summary>
+ Récupère toute la liste du UndoRedo.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.UndoRedo.GetAllListWithPosition(System.String)">
+ <summary>
+ Récupère toute la liste du UndoRedo avec la position exacte.
+ </summary>
+</member>
+<member name="P:xDoofSDK.Algorithm.UndoRedo.GetCurrentPosition">
+ <summary>
+ Récupère la position actuelle du UndoRedo.
+ </summary>
+</member>
+<member name="P:xDoofSDK.Algorithm.UndoRedo.GetCurrentUndoRedo">
+ <summary>
+ Récupère les positions total de la liste du UndoRedo.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Algorithm.WritingOnFile">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Algorithm.WritingOnFile"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.WritingOnFile.StartWOF">
+ <summary>
+ Démarre le Read/Write.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.WritingOnFile.StopWOF">
+ <summary>
+ Stop le Read/Write.
+ </summary>
+</member>
+<member name="P:xDoofSDK.Algorithm.WritingOnFile.WOFstatus">
+ <summary>
+ Retourne le status du WritingOnFile
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.WritingOnFile.Write(System.String)">
+ <summary>
+ Écris du texte dans le fichier.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.WritingOnFile.WriteNewLine(System.String)">
+ <summary>
+ Écris une nouvelle ligne avec du texte dans le fichier.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.WritingOnFile.Read">
+ <summary>
+ Lis et retourne tout le contenu du fichier.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.WritingOnFile.ReadLine(System.Int32)">
+ <summary>
+ Lis et retourne le contenu de la ligne spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.WritingOnFile.EraseLine(System.Int32)">
+ <summary>
+ Supprime la ligne spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.WritingOnFile.EraseAll">
+ <summary>
+ Supprime l'ensemble du contenu du fichier.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.WritingOnFile.ReplaceTo(System.String,System.String)">
+ <summary>
+ Remplace le texte spécifié par le nouveau texte souhaiter.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.WritingOnFile.ReverseLines">
+ <summary>
+ Inverse toute les lignes du fichier.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Algorithm.WritingOnFile.GetAllLines">
+ <summary>
+ Récupère et retourne toute les lignes.
+ </summary>
+</member>
+<member name="P:xDoofSDK.DateSystem.DateInfo.HoursPerDay">
+ <summary>
+ Retourne le nombre d'heure par jour.
+ </summary>
+</member>
+<member name="P:xDoofSDK.DateSystem.DateInfo.MinutesPerHour">
+ <summary>
+ Retourne le nombre de minutes par heure.
+ </summary>
+</member>
+<member name="P:xDoofSDK.DateSystem.DateInfo.MinutesPerDay">
+ <summary>
+ Retourne le nombre de minutes par jour.
+ </summary>
+</member>
+<member name="P:xDoofSDK.DateSystem.DateInfo.SecondsPerMinute">
+ <summary>
+ Retourne le nombre de secondes par minute.
+ </summary>
+</member>
+<member name="P:xDoofSDK.DateSystem.DateInfo.SecondsPerHour">
+ <summary>
+ Retourne le nombre de secondes par heure.
+ </summary>
+</member>
+<member name="P:xDoofSDK.DateSystem.DateInfo.SecondsPerDay">
+ <summary>
+ Retourne le nombre de secondes par jour.
+ </summary>
+</member>
+<member name="P:xDoofSDK.DateSystem.DateInfo.MillisecondesPerSecond">
+ <summary>
+ Retourne le nombre de millisecondes par seconde.
+ </summary>
+</member>
+<member name="P:xDoofSDK.DateSystem.DateInfo.MillisecondesPerMinute">
+ <summary>
+ Retourne le nombre de millisecondes par minute.
+ </summary>
+</member>
+<member name="P:xDoofSDK.DateSystem.DateInfo.MillisecondesPerHour">
+ <summary>
+ Retourne le nombre de millisecondes par heure.
+ </summary>
+</member>
+<member name="P:xDoofSDK.DateSystem.DateInfo.MillisecondesPerDay">
+ <summary>
+ Retourne le nombre de millisecondes par jour.
+ </summary>
+</member>
+<member name="T:xDoofSDK.DateSystem.DateTime">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.DateSystem.DateTime"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.DateSystem.DateTime.GetTimeString(System.String)">
+ <summary>
+ Retourne la date en format <see cref="T:System.String"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.DateSystem.DateTime.GetTimeUtcString(System.String)">
+ <summary>
+ Retourne la date en format <see cref="T:System.String"/> en temps UTC.
+ </summary>
+</member>
+<member name="M:xDoofSDK.DateSystem.DateTime.GetTime">
+ <summary>
+ Retourne la date en format <see cref="T:System.DateTime"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.DateSystem.DateTime.GetTimeUtc">
+ <summary>
+ Retourne la date en format <see cref="T:System.DateTime"/> en temps UTC.
+ </summary>
+</member>
+<member name="M:xDoofSDK.DateSystem.DateTime.GetCurrentDay">
+ <summary>
+ Retourne le jour actuelle en <see cref="T:System.String"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.DateSystem.DateTime.GetCurrentMonth">
+ <summary>
+ Retourne le mois actuelle en <see cref="T:System.String"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.DateSystem.DateTime.GetCurrentYear">
+ <summary>
+ Retourne l'année actuelle en <see cref="T:System.String"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.DateSystem.DateTime.CreateAssemblingDate(System.String,xDoofSDK.OrderDateAssembling)">
+ <summary>
+ Retourne une chaîne d'une date créé selon les paramètres saisie.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Expressions.Strex">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Expressions.Strex"/>, il s'agit de la classe d'expression formé en <see cref="T:System.String"/>.
+ </summary>
+</member>
+<member name="P:xDoofSDK.Expressions.Strex.GetPattern">
+ <summary>
+ Retourne le patterne déjà saisie.
+ </summary>
+</member>
+<member name="P:xDoofSDK.Expressions.Strex.isContainsPattern">
+ <summary>
+ Vérifie si le patterne saisie contient du contenu.
+ </summary>
+</member>
+<member name="P:xDoofSDK.Expressions.Strex.Pattern">
+ <summary>
+ Ajoute et remplace le patterne saisie par un nouveau.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Expressions.Strex.SetPattern(System.String)">
+ <summary>
+ Ajoute et remplace le patterne saisie par un nouveau.
+ </summary>
+</member>
+<member name="P:xDoofSDK.Expressions.Strex.Execute">
+ <summary>
+ Exécute le <see cref="T:xDoofSDK.Expressions.Strex"/> avec le patterne prédéfini et retourne le résultat.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Expressions.Strex.ExecuteStrex">
+ <summary>
+ Exécute le <see cref="T:xDoofSDK.Expressions.Strex"/> avec le patterne prédéfini et retourne le résultat.
+ </summary>
+</member>
+<member name="T:xDoofSDK.FileSystem.DirectorySystem">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.FileSystem.DirectorySystem"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.DirectorySystem.CreateDirectory(System.String)">
+ <summary>
+ Créé un dossier.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.DirectorySystem.CreateDirectoryList(System.String[])">
+ <summary>
+ Créé une liste de dossier(s) spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.DirectorySystem.DeleteDirectory(System.String)">
+ <summary>
+ Supprime le dossier spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.DirectorySystem.DeleteDirectoryList(System.String[])">
+ <summary>
+ Supprime une liste de dossier(s) spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.DirectorySystem.DeleteDirectory(System.String,System.Boolean)">
+ <summary>
+ Supprime le dossier spécifié et tout les sous-répertoires.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.DirectorySystem.DeleteDirectoryList(System.String[],System.Boolean[])">
+ <summary>
+ Supprime une liste de dossier(s) spécifié et tout les sous-répertoires.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.DirectorySystem.DirectoryExists(System.String)">
+ <summary>
+ Vérifie si le dossier spécifié existe.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si existant, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.FileSystem.DirectorySystem.DirectoryRename(System.String,System.String)">
+ <summary>
+ Renomme le dossier spécifié.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si renommer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.FileSystem.DirectorySystem.DirectoryRenameList(System.String[],System.String[])">
+ <summary>
+ Renomme une liste de dossier(s) spécifié.
+ </summary>
+</member>
+<member name="T:xDoofSDK.FileSystem.DirectorySystemInfo">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.FileSystem.DirectorySystemInfo"/>.
+ </summary>
+</member>
+<member name="T:xDoofSDK.FileSystem.FileSystem">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.FileSystem.FileSystem"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.ReadFileAllText(System.String)">
+ <summary>
+ Lit tout le contenu du fichier spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.ReadFileAllLines(System.String)">
+ <summary>
+ Lit tout les lignes du fichier spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.ReadFileAllBytes(System.String)">
+ <summary>
+ Lit tout le contenu du fichier dans un tableau d'octets.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.WriteFileAllText(System.String,System.String)">
+ <summary>
+ Créé un fichier et ajoute le contenu dans ce fichier.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.WriteFileAllLines(System.String,System.String[])">
+ <summary>
+ Créé un fichier et ajoute le contenu dans ce fichier.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.WriteFileAllBytes(System.String,System.Byte[])">
+ <summary>
+ Créé un fichier et ajoute le tableau d'octets dans ce fichier.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.AddFileLines(System.String,System.String[])">
+ <summary>
+ Lit et ajoute des lignes dans le fichier spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.AddFileText(System.String,System.String)">
+ <summary>
+ Lit et ajoute le contenu dans le fichier spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.DeleteFile(System.String)">
+ <summary>
+ Supprime le fichier spécifié si possible.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si supprimé, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.DeleteFileList(System.Collections.Generic.List{System.String})">
+ <summary>
+ Supprime une liste de fichiers spécifié si possible.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.DeleteFileArray(System.String[])">
+ <summary>
+ Supprime une liste String() de fichiers spécifié si possible.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.ExchangeFile(System.String,System.String)">
+ <summary>
+ Permet d'échanger un fichier d'emplacement contre un autre fichier ainsi que son contenu.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.ExchangeFileContents(System.String,System.String)">
+ <summary>
+ Permet d'échanger le contenu du premier fichier spécifié avec le deuxième fichier spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.FileExists(System.String)">
+ <summary>
+ Vérifie si le fichier spécifié existe.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si existant, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.CopyFile(System.String,System.String)">
+ <summary>
+ Copie le fichier vers un nouveau chemin.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.AssemblingFile(System.String,System.String,System.String,xDoofSDK.FileSystem.FileSystem.FileToDelete)">
+ <summary>
+ Assemble deux fichiers et créé le fichier assembler dans le chemin d'accès spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.AssemblingFileWithReturn(System.String,System.String,System.String,xDoofSDK.FileSystem.FileSystem.FileToDelete)">
+ <summary>
+ Lit et ajoute le contenu dans le fichier spécifié et retourne le <see cref="T:System.String"/> des deux fichiers assemblé.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystem.RenameFile(System.String,System.String)">
+ <summary>
+ Renomme le fichier spécifié par un nouveau nom.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si renommer, False dans le cas contraire.</returns>
+</member>
+<member name="T:xDoofSDK.FileSystem.FileSystemInfo">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.FileSystem.FileSystemInfo"/>.
+ </summary>
+</member>
+<member name="F:xDoofSDK.FileSystem.FileSystemInfo.SeperatorLeft">
+ <summary>
+ Fournit le séparateur de gauche '\'.
+ </summary>
+</member>
+<member name="F:xDoofSDK.FileSystem.FileSystemInfo.SeperatorRight">
+ <summary>
+ Fournit le séparateur de droite '/'.
+ </summary>
+</member>
+<member name="F:xDoofSDK.FileSystem.FileSystemInfo.InvalidCharacterFile">
+ <summary>
+ Fournit la liste des caractères interdit d'un nom de fichier.
+ </summary>
+</member>
+<member name="F:xDoofSDK.FileSystem.FileSystemInfo.InvalidCharacterFileChar">
+ <summary>
+ Fournit la liste en Char() des caractères interdit d'un nom de fichier.
+ </summary>
+</member>
+<member name="F:xDoofSDK.FileSystem.FileSystemInfo.InvalidCharacterDirectory">
+ <summary>
+ Fournit la liste des caractères interdit d'un nom de dossier.
+ </summary>
+</member>
+<member name="F:xDoofSDK.FileSystem.FileSystemInfo.InvalidCharacterDirectoryChar">
+ <summary>
+ Fournit la liste en Char() des caractères interdit d'un nom de dossier.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystemInfo.GetFileName(System.String)">
+ <summary>
+ Récupère le nom et l'extension du fichier spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystemInfo.GetFileNameWithoutExtension(System.String)">
+ <summary>
+ Récupère le nom sans l'extension du fichier spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystemInfo.GetFileExtension(System.String)">
+ <summary>
+ Récupère l'extension du fichier spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystemInfo.GetFilePathDirectoryLocalisation(System.String)">
+ <summary>
+ Récupère le nom ainsi que le chemin complet d'un fichier spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystemInfo.GetFilePathDirectoryNameLocalisation(System.String)">
+ <summary>
+ Récupère seulement le nom du dossier ou le fichier spécifié est entreposer.
+ </summary>
+</member>
+<member name="M:xDoofSDK.FileSystem.FileSystemInfo.IsValidFileName(System.String,System.Boolean)">
+ <summary>
+ Analyse si le nom du fichier saisie est un nom valide
+ </summary><returns>Retourne True si valide, False dans le cas contraire</returns>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_ACTIVATE">
+ <summary>
+The WM_ACTIVATE message is sent when a window is being activated or deactivated. This message is sent first to the window procedure of the top-level window being deactivated; it is then sent to the window procedure of the top-level window being activated.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_ACTIVATEAPP">
+ <summary>
+The WM_ACTIVATEAPP message is sent when a window belonging to a different application than the active window is about to be activated. The message is sent to the application whose window is being activated and to the application whose window is being deactivated.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_AFXFIRST">
+ <summary>
+Definition Needed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_AFXLAST">
+ <summary>
+Definition Needed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_APP">
+ <summary>
+The WM_APP constant is used by applications to help define private messages usually of the form WM_APP+X where X is an integer value.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_ASKCBFORMATNAME">
+ <summary>
+The WM_ASKCBFORMATNAME message is sent to the clipboard owner by a clipboard viewer window to request the name of a CF_OWNERDISPLAY clipboard format.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CANCELJOURNAL">
+ <summary>
+The WM_CANCELJOURNAL message is posted to an application when a user cancels the application's journaling activities. The message is posted with a NULL window handle.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CANCELMODE">
+ <summary>
+The WM_CANCELMODE message is sent to cancel certain modes such as mouse capture. For example the system sends this message to the active window when a dialog box or message box is displayed. Certain functions also send this message explicitly to the specified window regardless of whether it is the active window. For example the EnableWindow function sends this message when disabling the specified window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CAPTURECHANGED">
+ <summary>
+The WM_CAPTURECHANGED message is sent to the window that is losing the mouse capture.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CHANGECBCHAIN">
+ <summary>
+The WM_CHANGECBCHAIN message is sent to the first window in the clipboard viewer chain when a window is being removed from the chain.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CHANGEUISTATE">
+ <summary>
+An application sends the WM_CHANGEUISTATE message to indicate that the user interface (UI) state should be changed.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CHAR">
+ <summary>
+The WM_CHAR message is posted to the window with the keyboard focus when a WM_KEYDOWN message is translated by the TranslateMessage function. The WM_CHAR message contains the character code of the key that was pressed.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CHARTOITEM">
+ <summary>
+Sent by a list box with the LBS_WANTKEYBOARDINPUT style to its owner in response to a WM_CHAR message.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CHILDACTIVATE">
+ <summary>
+The WM_CHILDACTIVATE message is sent to a child window when the user clicks the window's title bar or when the window is activated moved or sized.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CLEAR">
+ <summary>
+An application sends a WM_CLEAR message to an edit control or combo box to delete (clear) the current selection if any from the edit control.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CLOSE">
+ <summary>
+The WM_CLOSE message is sent as a signal that a window or an application should terminate.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_COMMAND">
+ <summary>
+The WM_COMMAND message is sent when the user selects a command item from a menu when a control sends a notification message to its parent window or when an accelerator keystroke is translated.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_COMPACTING">
+ <summary>
+The WM_COMPACTING message is sent to all top-level windows when the system detects more than 12.5 percent of system time over a 30- to 60-second interval is being spent compacting memory. This indicates that system memory is low.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_COMPAREITEM">
+ <summary>
+The system sends the WM_COMPAREITEM message to determine the relative position of a new item in the sorted list of an owner-drawn combo box or list box. Whenever the application adds a new item the system sends this message to the owner of a combo box or list box created with the CBS_SORT or LBS_SORT style.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CONTEXTMENU">
+ <summary>
+The WM_CONTEXTMENU message notifies a window that the user clicked the right mouse button (right-clicked) in the window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_COPY">
+ <summary>
+An application sends the WM_COPY message to an edit control or combo box to copy the current selection to the clipboard in CF_TEXT format.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_COPYDATA">
+ <summary>
+An application sends the WM_COPYDATA message to pass data to another application.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CREATE">
+ <summary>
+The WM_CREATE message is sent when an application requests that a window be created by calling the CreateWindowEx or CreateWindow function. (The message is sent before the function returns.) The window procedure of the new window receives this message after the window is created but before the window becomes visible.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CTLCOLORBTN">
+ <summary>
+The WM_CTLCOLORBTN message is sent to the parent window of a button before drawing the button. The parent window can change the button's text and background colors. However only owner-drawn buttons respond to the parent window processing this message.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CTLCOLORDLG">
+ <summary>
+The WM_CTLCOLORDLG message is sent to a dialog box before the system draws the dialog box. By responding to this message the dialog box can set its text and background colors using the specified display device context handle.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CTLCOLOREDIT">
+ <summary>
+An edit control that is not read-only or disabled sends the WM_CTLCOLOREDIT message to its parent window when the control is about to be drawn. By responding to this message the parent window can use the specified device context handle to set the text and background colors of the edit control.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CTLCOLORLISTBOX">
+ <summary>
+Sent to the parent window of a list box before the system draws the list box. By responding to this message the parent window can set the text and background colors of the list box by using the specified display device context handle.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CTLCOLORMSGBOX">
+ <summary>
+The WM_CTLCOLORMSGBOX message is sent to the owner window of a message box before Windows draws the message box. By responding to this message the owner window can set the text and background colors of the message box by using the given display device context handle.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CTLCOLORSCROLLBAR">
+ <summary>
+The WM_CTLCOLORSCROLLBAR message is sent to the parent window of a scroll bar control when the control is about to be drawn. By responding to this message the parent window can use the display context handle to set the background color of the scroll bar control.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CTLCOLORSTATIC">
+ <summary>
+A static control or an edit control that is read-only or disabled sends the WM_CTLCOLORSTATIC message to its parent window when the control is about to be drawn. By responding to this message the parent window can use the specified device context handle to set the text and background colors of the static control.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_CUT">
+ <summary>
+An application sends a WM_CUT message to an edit control or combo box to delete (cut) the current selection if any in the edit control and copy the deleted text to the clipboard in CF_TEXT format.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_DEADCHAR">
+ <summary>
+The WM_DEADCHAR message is posted to the window with the keyboard focus when a WM_KEYUP message is translated by the TranslateMessage function. WM_DEADCHAR specifies a character code generated by a dead key. A dead key is a key that generates a character such as the umlaut (double-dot) that is combined with another character to form a composite character. For example the umlaut-O character (?) is generated by typing the dead key for the umlaut character and then typing the O key.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_DELETEITEM">
+ <summary>
+Sent to the owner of a list box or combo box when the list box or combo box is destroyed or when items are removed by the LB_DELETESTRING LB_RESETCONTENT CB_DELETESTRING or CB_RESETCONTENT message. The system sends a WM_DELETEITEM message for each deleted item. The system sends the WM_DELETEITEM message for any deleted list box or combo box item with nonzero item data.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_DESTROY">
+ <summary>
+The WM_DESTROY message is sent when a window is being destroyed. It is sent to the window procedure of the window being destroyed after the window is removed from the screen. This message is sent first to the window being destroyed and then to the child windows (if any) as they are destroyed. During the processing of the message it can be assumed that all child windows still exist.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_DESTROYCLIPBOARD">
+ <summary>
+The WM_DESTROYCLIPBOARD message is sent to the clipboard owner when a call to the EmptyClipboard function empties the clipboard.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_DEVICECHANGE">
+ <summary>
+Notifies an application of a change to the hardware configuration of a device or the computer.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_DEVMODECHANGE">
+ <summary>
+The WM_DEVMODECHANGE message is sent to all top-level windows whenever the user changes device-mode settings.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_DISPLAYCHANGE">
+ <summary>
+The WM_DISPLAYCHANGE message is sent to all windows when the display resolution has changed.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_DRAWCLIPBOARD">
+ <summary>
+The WM_DRAWCLIPBOARD message is sent to the first window in the clipboard viewer chain when the content of the clipboard changes. This enables a clipboard viewer window to display the new content of the clipboard.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_DRAWITEM">
+ <summary>
+The WM_DRAWITEM message is sent to the parent window of an owner-drawn button combo box list box or menu when a visual aspect of the button combo box list box or menu has changed.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_DROPFILES">
+ <summary>
+Sent when the user drops a file on the window of an application that has registered itself as a recipient of dropped files.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_ENABLE">
+ <summary>
+The WM_ENABLE message is sent when an application changes the enabled state of a window. It is sent to the window whose enabled state is changing. This message is sent before the EnableWindow function returns but after the enabled state (WS_DISABLED style bit) of the window has changed.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_ENDSESSION">
+ <summary>
+The WM_ENDSESSION message is sent to an application after the system processes the results of the WM_QUERYENDSESSION message. The WM_ENDSESSION message informs the application whether the session is ending.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_ENTERIDLE">
+ <summary>
+The WM_ENTERIDLE message is sent to the owner window of a modal dialog box or menu that is entering an idle state. A modal dialog box or menu enters an idle state when no messages are waiting in its queue after it has processed one or more previous messages.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_ENTERMENULOOP">
+ <summary>
+The WM_ENTERMENULOOP message informs an application's main window procedure that a menu modal loop has been entered.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_ENTERSIZEMOVE">
+ <summary>
+The WM_ENTERSIZEMOVE message is sent one time to a window after it enters the moving or sizing modal loop. The window enters the moving or sizing modal loop when the user clicks the window's title bar or sizing border or when the window passes the WM_SYSCOMMAND message to the DefWindowProc function and the wParam parameter of the message specifies the SC_MOVE or SC_SIZE value. The operation is complete when DefWindowProc returns.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_ERASEBKGND">
+ <summary>
+The WM_ERASEBKGND message is sent when the window background must be erased (for example when a window is resized). The message is sent to prepare an invalidated portion of a window for painting.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_EXITMENULOOP">
+ <summary>
+The WM_EXITMENULOOP message informs an application's main window procedure that a menu modal loop has been exited.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_EXITSIZEMOVE">
+ <summary>
+The WM_EXITSIZEMOVE message is sent one time to a window after it has exited the moving or sizing modal loop. The window enters the moving or sizing modal loop when the user clicks the window's title bar or sizing border or when the window passes the WM_SYSCOMMAND message to the DefWindowProc function and the wParam parameter of the message specifies the SC_MOVE or SC_SIZE value. The operation is complete when DefWindowProc returns.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_FONTCHANGE">
+ <summary>
+An application sends the WM_FONTCHANGE message to all top-level windows in the system after changing the pool of font resources.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_GETDLGCODE">
+ <summary>
+The WM_GETDLGCODE message is sent to the window procedure associated with a control. By default the system handles all keyboard input to the control; the system interprets certain types of keyboard input as dialog box navigation keys. To override this default behavior the control can respond to the WM_GETDLGCODE message to indicate the types of input it wants to process itself.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_GETFONT">
+ <summary>
+An application sends a WM_GETFONT message to a control to retrieve the font with which the control is currently drawing its text.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_GETHOTKEY">
+ <summary>
+An application sends a WM_GETHOTKEY message to determine the hot key associated with a window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_GETICON">
+ <summary>
+The WM_GETICON message is sent to a window to retrieve a handle to the large or small icon associated with a window. The system displays the large icon in the ALT+TAB dialog and the small icon in the window caption.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_GETMINMAXINFO">
+ <summary>
+The WM_GETMINMAXINFO message is sent to a window when the size or position of the window is about to change. An application can use this message to override the window's default maximized size and position or its default minimum or maximum tracking size.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_GETOBJECT">
+ <summary>
+Active Accessibility sends the WM_GETOBJECT message to obtain information about an accessible object contained in a server application. Applications never send this message directly. It is sent only by Active Accessibility in response to calls to AccessibleObjectFromPoint AccessibleObjectFromEvent or AccessibleObjectFromWindow. However server applications handle this message.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_GETTEXT">
+ <summary>
+An application sends a WM_GETTEXT message to copy the text that corresponds to a window into a buffer provided by the caller.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_GETTEXTLENGTH">
+ <summary>
+An application sends a WM_GETTEXTLENGTH message to determine the length in characters of the text associated with a window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_HANDHELDFIRST">
+ <summary>
+Definition Needed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_HANDHELDLAST">
+ <summary>
+Definition Needed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_HELP">
+ <summary>
+Indicates that the user pressed the F1 key. If a menu is active when F1 is pressed WM_HELP is sent to the window associated with the menu; otherwise WM_HELP is sent to the window that has the keyboard focus. If no window has the keyboard focus WM_HELP is sent to the currently active window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_HOTKEY">
+ <summary>
+The WM_HOTKEY message is posted when the user presses a hot key registered by the RegisterHotKey function. The message is placed at the top of the message queue associated with the thread that registered the hot key.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_HSCROLL">
+ <summary>
+This message is sent to a window when a scroll event occurs in the window's standard horizontal scroll bar. This message is also sent to the owner of a horizontal scroll bar control when a scroll event occurs in the control.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_HSCROLLCLIPBOARD">
+ <summary>
+The WM_HSCROLLCLIPBOARD message is sent to the clipboard owner by a clipboard viewer window. This occurs when the clipboard contains data in the CF_OWNERDISPLAY format and an event occurs in the clipboard viewer's horizontal scroll bar. The owner should scroll the clipboard image and update the scroll bar values.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_ICONERASEBKGND">
+ <summary>
+Windows NT 3.51 and earlier: The WM_ICONERASEBKGND message is sent to a minimized window when the background of the icon must be filled before painting the icon. A window receives this message only if a class icon is defined for the window; otherwise WM_ERASEBKGND is sent. This message is not sent by newer versions of Windows.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_IME_CHAR">
+ <summary>
+Sent to an application when the IME gets a character of the conversion result. A window receives this message through its WindowProc function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_IME_COMPOSITION">
+ <summary>
+Sent to an application when the IME changes composition status as a result of a keystroke. A window receives this message through its WindowProc function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_IME_COMPOSITIONFULL">
+ <summary>
+Sent to an application when the IME window finds no space to extend the area for the composition window. A window receives this message through its WindowProc function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_IME_CONTROL">
+ <summary>
+Sent by an application to direct the IME window to carry out the requested command. The application uses this message to control the IME window that it has created. To send this message the application calls the SendMessage function with the following parameters.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_IME_ENDCOMPOSITION">
+ <summary>
+Sent to an application when the IME ends composition. A window receives this message through its WindowProc function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_IME_KEYDOWN">
+ <summary>
+Sent to an application by the IME to notify the application of a key press and to keep message order. A window receives this message through its WindowProc function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_IME_KEYLAST">
+ <summary>
+Definition Needed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_IME_KEYUP">
+ <summary>
+Sent to an application by the IME to notify the application of a key release and to keep message order. A window receives this message through its WindowProc function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_IME_NOTIFY">
+ <summary>
+Sent to an application to notify it of changes to the IME window. A window receives this message through its WindowProc function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_IME_REQUEST">
+ <summary>
+Sent to an application to provide commands and request information. A window receives this message through its WindowProc function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_IME_SELECT">
+ <summary>
+Sent to an application when the operating system is about to change the current IME. A window receives this message through its WindowProc function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_IME_SETCONTEXT">
+ <summary>
+Sent to an application when a window is activated. A window receives this message through its WindowProc function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_IME_STARTCOMPOSITION">
+ <summary>
+Sent immediately before the IME generates the composition string as a result of a keystroke. A window receives this message through its WindowProc function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_INITDIALOG">
+ <summary>
+The WM_INITDIALOG message is sent to the dialog box procedure immediately before a dialog box is displayed. Dialog box procedures typically use this message to initialize controls and carry out any other initialization tasks that affect the appearance of the dialog box.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_INITMENU">
+ <summary>
+The WM_INITMENU message is sent when a menu is about to become active. It occurs when the user clicks an item on the menu bar or presses a menu key. This allows the application to modify the menu before it is displayed.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_INITMENUPOPUP">
+ <summary>
+The WM_INITMENUPOPUP message is sent when a drop-down menu or submenu is about to become active. This allows an application to modify the menu before it is displayed without changing the entire menu.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_INPUTLANGCHANGE">
+ <summary>
+The WM_INPUTLANGCHANGE message is sent to the topmost affected window after an application's input language has been changed. You should make any application-specific settings and pass the message to the DefWindowProc function which passes the message to all first-level child windows. These child windows can pass the message to DefWindowProc to have it pass the message to their child windows and so on.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_INPUTLANGCHANGEREQUEST">
+ <summary>
+The WM_INPUTLANGCHANGEREQUEST message is posted to the window with the focus when the user chooses a new input language either with the hotkey (specified in the Keyboard control panel application) or from the indicator on the system taskbar. An application can accept the change by passing the message to the DefWindowProc function or reject the change (and prevent it from taking place) by returning immediately.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_KEYDOWN">
+ <summary>
+The WM_KEYDOWN message is posted to the window with the keyboard focus when a nonsystem key is pressed. A nonsystem key is a key that is pressed when the ALT key is not pressed.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_KEYFIRST">
+ <summary>
+This message filters for keyboard messages.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_KEYLAST">
+ <summary>
+This message filters for keyboard messages.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_KEYUP">
+ <summary>
+The WM_KEYUP message is posted to the window with the keyboard focus when a nonsystem key is released. A nonsystem key is a key that is pressed when the ALT key is not pressed or a keyboard key that is pressed when a window has the keyboard focus.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_KILLFOCUS">
+ <summary>
+The WM_KILLFOCUS message is sent to a window immediately before it loses the keyboard focus.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_LBUTTONDBLCLK">
+ <summary>
+The WM_LBUTTONDBLCLK message is posted when the user double-clicks the left mouse button while the cursor is in the client area of a window. If the mouse is not captured the message is posted to the window beneath the cursor. Otherwise the message is posted to the window that has captured the mouse.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_LBUTTONDOWN">
+ <summary>
+The WM_LBUTTONDOWN message is posted when the user presses the left mouse button while the cursor is in the client area of a window. If the mouse is not captured the message is posted to the window beneath the cursor. Otherwise the message is posted to the window that has captured the mouse.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_LBUTTONUP">
+ <summary>
+The WM_LBUTTONUP message is posted when the user releases the left mouse button while the cursor is in the client area of a window. If the mouse is not captured the message is posted to the window beneath the cursor. Otherwise the message is posted to the window that has captured the mouse.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MBUTTONDBLCLK">
+ <summary>
+The WM_MBUTTONDBLCLK message is posted when the user double-clicks the middle mouse button while the cursor is in the client area of a window. If the mouse is not captured the message is posted to the window beneath the cursor. Otherwise the message is posted to the window that has captured the mouse.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MBUTTONDOWN">
+ <summary>
+The WM_MBUTTONDOWN message is posted when the user presses the middle mouse button while the cursor is in the client area of a window. If the mouse is not captured the message is posted to the window beneath the cursor. Otherwise the message is posted to the window that has captured the mouse.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MBUTTONUP">
+ <summary>
+The WM_MBUTTONUP message is posted when the user releases the middle mouse button while the cursor is in the client area of a window. If the mouse is not captured the message is posted to the window beneath the cursor. Otherwise the message is posted to the window that has captured the mouse.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MDIACTIVATE">
+ <summary>
+An application sends the WM_MDIACTIVATE message to a multiple-document interface (MDI) client window to instruct the client window to activate a different MDI child window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MDICASCADE">
+ <summary>
+An application sends the WM_MDICASCADE message to a multiple-document interface (MDI) client window to arrange all its child windows in a cascade format.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MDICREATE">
+ <summary>
+An application sends the WM_MDICREATE message to a multiple-document interface (MDI) client window to create an MDI child window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MDIDESTROY">
+ <summary>
+An application sends the WM_MDIDESTROY message to a multiple-document interface (MDI) client window to close an MDI child window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MDIGETACTIVE">
+ <summary>
+An application sends the WM_MDIGETACTIVE message to a multiple-document interface (MDI) client window to retrieve the handle to the active MDI child window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MDIICONARRANGE">
+ <summary>
+An application sends the WM_MDIICONARRANGE message to a multiple-document interface (MDI) client window to arrange all minimized MDI child windows. It does not affect child windows that are not minimized.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MDIMAXIMIZE">
+ <summary>
+An application sends the WM_MDIMAXIMIZE message to a multiple-document interface (MDI) client window to maximize an MDI child window. The system resizes the child window to make its client area fill the client window. The system places the child window's window menu icon in the rightmost position of the frame window's menu bar and places the child window's restore icon in the leftmost position. The system also appends the title bar text of the child window to that of the frame window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MDINEXT">
+ <summary>
+An application sends the WM_MDINEXT message to a multiple-document interface (MDI) client window to activate the next or previous child window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MDIREFRESHMENU">
+ <summary>
+An application sends the WM_MDIREFRESHMENU message to a multiple-document interface (MDI) client window to refresh the window menu of the MDI frame window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MDIRESTORE">
+ <summary>
+An application sends the WM_MDIRESTORE message to a multiple-document interface (MDI) client window to restore an MDI child window from maximized or minimized size.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MDISETMENU">
+ <summary>
+An application sends the WM_MDISETMENU message to a multiple-document interface (MDI) client window to replace the entire menu of an MDI frame window to replace the window menu of the frame window or both.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MDITILE">
+ <summary>
+An application sends the WM_MDITILE message to a multiple-document interface (MDI) client window to arrange all of its MDI child windows in a tile format.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MEASUREITEM">
+ <summary>
+The WM_MEASUREITEM message is sent to the owner window of a combo box list box list view control or menu item when the control or menu is created.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MENUCHAR">
+ <summary>
+The WM_MENUCHAR message is sent when a menu is active and the user presses a key that does not correspond to any mnemonic or accelerator key. This message is sent to the window that owns the menu.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MENUCOMMAND">
+ <summary>
+The WM_MENUCOMMAND message is sent when the user makes a selection from a menu.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MENUDRAG">
+ <summary>
+The WM_MENUDRAG message is sent to the owner of a drag-and-drop menu when the user drags a menu item.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MENUGETOBJECT">
+ <summary>
+The WM_MENUGETOBJECT message is sent to the owner of a drag-and-drop menu when the mouse cursor enters a menu item or moves from the center of the item to the top or bottom of the item.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MENURBUTTONUP">
+ <summary>
+The WM_MENURBUTTONUP message is sent when the user releases the right mouse button while the cursor is on a menu item.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MENUSELECT">
+ <summary>
+The WM_MENUSELECT message is sent to a menu's owner window when the user selects a menu item.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MOUSEACTIVATE">
+ <summary>
+The WM_MOUSEACTIVATE message is sent when the cursor is in an inactive window and the user presses a mouse button. The parent window receives this message only if the child window passes it to the DefWindowProc function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MOUSEFIRST">
+ <summary>
+Use WM_MOUSEFIRST to specify the first mouse message. Use the PeekMessage() Function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MOUSEHOVER">
+ <summary>
+The WM_MOUSEHOVER message is posted to a window when the cursor hovers over the client area of the window for the period of time specified in a prior call to TrackMouseEvent.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MOUSELAST">
+ <summary>
+Definition Needed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MOUSELEAVE">
+ <summary>
+The WM_MOUSELEAVE message is posted to a window when the cursor leaves the client area of the window specified in a prior call to TrackMouseEvent.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MOUSEMOVE">
+ <summary>
+The WM_MOUSEMOVE message is posted to a window when the cursor moves. If the mouse is not captured the message is posted to the window that contains the cursor. Otherwise the message is posted to the window that has captured the mouse.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MOUSEWHEEL">
+ <summary>
+The WM_MOUSEWHEEL message is sent to the focus window when the mouse wheel is rotated. The DefWindowProc function propagates the message to the window's parent. There should be no internal forwarding of the message since DefWindowProc propagates it up the parent chain until it finds a window that processes it.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MOUSEHWHEEL">
+ <summary>
+The WM_MOUSEHWHEEL message is sent to the focus window when the mouse's horizontal scroll wheel is tilted or rotated. The DefWindowProc function propagates the message to the window's parent. There should be no internal forwarding of the message since DefWindowProc propagates it up the parent chain until it finds a window that processes it.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MOVE">
+ <summary>
+The WM_MOVE message is sent after a window has been moved.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_MOVING">
+ <summary>
+The WM_MOVING message is sent to a window that the user is moving. By processing this message an application can monitor the position of the drag rectangle and if needed change its position.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCACTIVATE">
+ <summary>
+Non Client Area Activated Caption(Title) of the Form
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCCALCSIZE">
+ <summary>
+The WM_NCCALCSIZE message is sent when the size and position of a window's client area must be calculated. By processing this message an application can control the content of the window's client area when the size or position of the window changes.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCCREATE">
+ <summary>
+The WM_NCCREATE message is sent prior to the WM_CREATE message when a window is first created.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCDESTROY">
+ <summary>
+The WM_NCDESTROY message informs a window that its nonclient area is being destroyed. The DestroyWindow function sends the WM_NCDESTROY message to the window following the WM_DESTROY message. WM_DESTROY is used to free the allocated memory object associated with the window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCHITTEST">
+ <summary>
+The WM_NCHITTEST message is sent to a window when the cursor moves or when a mouse button is pressed or released. If the mouse is not captured the message is sent to the window beneath the cursor. Otherwise the message is sent to the window that has captured the mouse.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCLBUTTONDBLCLK">
+ <summary>
+The WM_NCLBUTTONDBLCLK message is posted when the user double-clicks the left mouse button while the cursor is within the nonclient area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse this message is not posted.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCLBUTTONDOWN">
+ <summary>
+The WM_NCLBUTTONDOWN message is posted when the user presses the left mouse button while the cursor is within the nonclient area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse this message is not posted.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCLBUTTONUP">
+ <summary>
+The WM_NCLBUTTONUP message is posted when the user releases the left mouse button while the cursor is within the nonclient area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse this message is not posted.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCMBUTTONDBLCLK">
+ <summary>
+The WM_NCMBUTTONDBLCLK message is posted when the user double-clicks the middle mouse button while the cursor is within the nonclient area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse this message is not posted.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCMBUTTONDOWN">
+ <summary>
+The WM_NCMBUTTONDOWN message is posted when the user presses the middle mouse button while the cursor is within the nonclient area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse this message is not posted.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCMBUTTONUP">
+ <summary>
+The WM_NCMBUTTONUP message is posted when the user releases the middle mouse button while the cursor is within the nonclient area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse this message is not posted.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCMOUSELEAVE">
+ <summary>
+ The WM_NCMOUSELEAVE message is posted to a window when the cursor leaves the nonclient area of the window specified in a prior call to TrackMouseEvent.
+ </summary>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCMOUSEMOVE">
+ <summary>
+The WM_NCMOUSEMOVE message is posted to a window when the cursor is moved within the nonclient area of the window. This message is posted to the window that contains the cursor. If a window has captured the mouse this message is not posted.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCPAINT">
+ <summary>
+The WM_NCPAINT message is sent to a window when its frame must be painted.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCRBUTTONDBLCLK">
+ <summary>
+The WM_NCRBUTTONDBLCLK message is posted when the user double-clicks the right mouse button while the cursor is within the nonclient area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse this message is not posted.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCRBUTTONDOWN">
+ <summary>
+The WM_NCRBUTTONDOWN message is posted when the user presses the right mouse button while the cursor is within the nonclient area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse this message is not posted.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NCRBUTTONUP">
+ <summary>
+The WM_NCRBUTTONUP message is posted when the user releases the right mouse button while the cursor is within the nonclient area of a window. This message is posted to the window that contains the cursor. If a window has captured the mouse this message is not posted.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NEXTDLGCTL">
+ <summary>
+The WM_NEXTDLGCTL message is sent to a dialog box procedure to set the keyboard focus to a different control in the dialog box
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NEXTMENU">
+ <summary>
+The WM_NEXTMENU message is sent to an application when the right or left arrow key is used to switch between the menu bar and the system menu.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NOTIFY">
+ <summary>
+Sent by a common control to its parent window when an event has occurred or the control requires some information.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NOTIFYFORMAT">
+ <summary>
+Determines if a window accepts ANSI or Unicode structures in the WM_NOTIFY notification message. WM_NOTIFYFORMAT messages are sent from a common control to its parent window and from the parent window to the common control.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_NULL">
+ <summary>
+The WM_NULL message performs no operation. An application sends the WM_NULL message if it wants to post a message that the recipient window will ignore.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_PAINT">
+ <summary>
+Occurs when the control needs repainting
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_PAINTCLIPBOARD">
+ <summary>
+The WM_PAINTCLIPBOARD message is sent to the clipboard owner by a clipboard viewer window when the clipboard contains data in the CF_OWNERDISPLAY format and the clipboard viewer's client area needs repainting.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_PAINTICON">
+ <summary>
+Windows NT 3.51 and earlier: The WM_PAINTICON message is sent to a minimized window when the icon is to be painted. This message is not sent by newer versions of Microsoft Windows except in unusual circumstances explained in the Remarks.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_PALETTECHANGED">
+ <summary>
+This message is sent by the OS to all top-level and overlapped windows after the window with the keyboard focus realizes its logical palette. This message enables windows that do not have the keyboard focus to realize their logical palettes and update their client areas.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_PALETTEISCHANGING">
+ <summary>
+The WM_PALETTEISCHANGING message informs applications that an application is going to realize its logical palette.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_PARENTNOTIFY">
+ <summary>
+The WM_PARENTNOTIFY message is sent to the parent of a child window when the child window is created or destroyed or when the user clicks a mouse button while the cursor is over the child window. When the child window is being created the system sends WM_PARENTNOTIFY just before the CreateWindow or CreateWindowEx function that creates the window returns. When the child window is being destroyed the system sends the message before any processing to destroy the window takes place.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_PASTE">
+ <summary>
+An application sends a WM_PASTE message to an edit control or combo box to copy the current content of the clipboard to the edit control at the current caret position. Data is inserted only if the clipboard contains data in CF_TEXT format.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_PENWINFIRST">
+ <summary>
+Definition Needed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_PENWINLAST">
+ <summary>
+Definition Needed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_POWER">
+ <summary>
+Notifies applications that the system typically a battery-powered personal computer is about to enter a suspended mode. Obsolete : use POWERBROADCAST instead
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_POWERBROADCAST">
+ <summary>
+Notifies applications that a power-management event has occurred.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_PRINT">
+ <summary>
+The WM_PRINT message is sent to a window to request that it draw itself in the specified device context most commonly in a printer device context.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_PRINTCLIENT">
+ <summary>
+The WM_PRINTCLIENT message is sent to a window to request that it draw its client area in the specified device context most commonly in a printer device context.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_QUERYDRAGICON">
+ <summary>
+The WM_QUERYDRAGICON message is sent to a minimized (iconic) window. The window is about to be dragged by the user but does not have an icon defined for its class. An application can return a handle to an icon or cursor. The system displays this cursor or icon while the user drags the icon.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_QUERYENDSESSION">
+ <summary>
+The WM_QUERYENDSESSION message is sent when the user chooses to end the session or when an application calls one of the system shutdown functions. If any application returns zero the session is not ended. The system stops sending WM_QUERYENDSESSION messages as soon as one application returns zero. After processing this message the system sends the WM_ENDSESSION message with the wParam parameter set to the results of the WM_QUERYENDSESSION message.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_QUERYNEWPALETTE">
+ <summary>
+This message informs a window that it is about to receive the keyboard focus giving the window the opportunity to realize its logical palette when it receives the focus.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_QUERYOPEN">
+ <summary>
+The WM_QUERYOPEN message is sent to an icon when the user requests that the window be restored to its previous size and position.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_QUEUESYNC">
+ <summary>
+The WM_QUEUESYNC message is sent by a computer-based training (CBT) application to separate user-input messages from other messages sent through the WH_JOURNALPLAYBACK Hook procedure.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_QUIT">
+ <summary>
+Once received it ends the application's Message Loop signaling the application to end. It can be sent by pressing Alt+F4 Clicking the X in the upper right-hand of the program or going to File->Exit.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_RBUTTONDBLCLK">
+ <summary>
+he WM_RBUTTONDBLCLK message is posted when the user double-clicks the right mouse button while the cursor is in the client area of a window. If the mouse is not captured the message is posted to the window beneath the cursor. Otherwise the message is posted to the window that has captured the mouse.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_RBUTTONDOWN">
+ <summary>
+The WM_RBUTTONDOWN message is posted when the user presses the right mouse button while the cursor is in the client area of a window. If the mouse is not captured the message is posted to the window beneath the cursor. Otherwise the message is posted to the window that has captured the mouse.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_RBUTTONUP">
+ <summary>
+The WM_RBUTTONUP message is posted when the user releases the right mouse button while the cursor is in the client area of a window. If the mouse is not captured the message is posted to the window beneath the cursor. Otherwise the message is posted to the window that has captured the mouse.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_RENDERALLFORMATS">
+ <summary>
+The WM_RENDERALLFORMATS message is sent to the clipboard owner before it is destroyed if the clipboard owner has delayed rendering one or more clipboard formats. For the content of the clipboard to remain available to other applications the clipboard owner must render data in all the formats it is capable of generating and place the data on the clipboard by calling the SetClipboardData function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_RENDERFORMAT">
+ <summary>
+The WM_RENDERFORMAT message is sent to the clipboard owner if it has delayed rendering a specific clipboard format and if an application has requested data in that format. The clipboard owner must render data in the specified format and place it on the clipboard by calling the SetClipboardData function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SETCURSOR">
+ <summary>
+The WM_SETCURSOR message is sent to a window if the mouse causes the cursor to move within a window and mouse input is not captured.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SETFOCUS">
+ <summary>
+When the controll got the focus
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SETFONT">
+ <summary>
+An application sends a WM_SETFONT message to specify the font that a control is to use when drawing text.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SETHOTKEY">
+ <summary>
+An application sends a WM_SETHOTKEY message to a window to associate a hot key with the window. When the user presses the hot key the system activates the window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SETICON">
+ <summary>
+An application sends the WM_SETICON message to associate a new large or small icon with a window. The system displays the large icon in the ALT+TAB dialog box and the small icon in the window caption.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SETREDRAW">
+ <summary>
+An application sends the WM_SETREDRAW message to a window to allow changes in that window to be redrawn or to prevent changes in that window from being redrawn.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SETTEXT">
+ <summary>
+Text / Caption changed on the control. An application sends a WM_SETTEXT message to set the text of a window.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SETTINGCHANGE">
+ <summary>
+An application sends the WM_SETTINGCHANGE message to all top-level windows after making a change to the WIN.INI file. The SystemParametersInfo function sends this message after an application uses the function to change a setting in WIN.INI.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SHOWWINDOW">
+ <summary>
+The WM_SHOWWINDOW message is sent to a window when the window is about to be hidden or shown
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SIZE">
+ <summary>
+The WM_SIZE message is sent to a window after its size has changed.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SIZECLIPBOARD">
+ <summary>
+The WM_SIZECLIPBOARD message is sent to the clipboard owner by a clipboard viewer window when the clipboard contains data in the CF_OWNERDISPLAY format and the clipboard viewer's client area has changed size.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SIZING">
+ <summary>
+The WM_SIZING message is sent to a window that the user is resizing. By processing this message an application can monitor the size and position of the drag rectangle and if needed change its size or position.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SPOOLERSTATUS">
+ <summary>
+The WM_SPOOLERSTATUS message is sent from Print Manager whenever a job is added to or removed from the Print Manager queue.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_STYLECHANGED">
+ <summary>
+The WM_STYLECHANGED message is sent to a window after the SetWindowLong function has changed one or more of the window's styles.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_STYLECHANGING">
+ <summary>
+The WM_STYLECHANGING message is sent to a window when the SetWindowLong function is about to change one or more of the window's styles.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SYNCPAINT">
+ <summary>
+The WM_SYNCPAINT message is used to synchronize painting while avoiding linking independent GUI threads.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SYSCHAR">
+ <summary>
+The WM_SYSCHAR message is posted to the window with the keyboard focus when a WM_SYSKEYDOWN message is translated by the TranslateMessage function. It specifies the character code of a system character key — that is a character key that is pressed while the ALT key is down.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SYSCOLORCHANGE">
+ <summary>
+This message is sent to all top-level windows when a change is made to a system color setting.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SYSCOMMAND">
+ <summary>
+A window receives this message when the user chooses a command from the Window menu (formerly known as the system or control menu) or when the user chooses the maximize button minimize button restore button or close button.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SYSDEADCHAR">
+ <summary>
+The WM_SYSDEADCHAR message is sent to the window with the keyboard focus when a WM_SYSKEYDOWN message is translated by the TranslateMessage function. WM_SYSDEADCHAR specifies the character code of a system dead key — that is a dead key that is pressed while holding down the ALT key.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SYSKEYDOWN">
+ <summary>
+The WM_SYSKEYDOWN message is posted to the window with the keyboard focus when the user presses the F10 key (which activates the menu bar) or holds down the ALT key and then presses another key. It also occurs when no window currently has the keyboard focus; in this case the WM_SYSKEYDOWN message is sent to the active window. The window that receives the message can distinguish between these two contexts by checking the context code in the lParam parameter.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_SYSKEYUP">
+ <summary>
+The WM_SYSKEYUP message is posted to the window with the keyboard focus when the user releases a key that was pressed while the ALT key was held down. It also occurs when no window currently has the keyboard focus; in this case the WM_SYSKEYUP message is sent to the active window. The window that receives the message can distinguish between these two contexts by checking the context code in the lParam parameter.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_TCARD">
+ <summary>
+Sent to an application that has initiated a training card with Microsoft Windows Help. The message informs the application when the user clicks an authorable button. An application initiates a training card by specifying the HELP_TCARD command in a call to the WinHelp function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_TIMECHANGE">
+ <summary>
+A message that is sent whenever there is a change in the system time.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_TIMER">
+ <summary>
+The WM_TIMER message is posted to the installing thread's message queue when a timer expires. The message is posted by the GetMessage or PeekMessage function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_UNDO">
+ <summary>
+An application sends a WM_UNDO message to an edit control to undo the last operation. When this message is sent to an edit control the previously deleted text is restored or the previously added text is deleted.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_UNINITMENUPOPUP">
+ <summary>
+The WM_UNINITMENUPOPUP message is sent when a drop-down menu or submenu has been destroyed.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_USER">
+ <summary>
+The WM_USER constant is used by applications to help define private messages for use by private window classes usually of the form WM_USER+X where X is an integer value.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_USERCHANGED">
+ <summary>
+The WM_USERCHANGED message is sent to all windows after the user has logged on or off. When the user logs on or off the system updates the user-specific settings. The system sends this message immediately after updating the settings.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_VKEYTOITEM">
+ <summary>
+Sent by a list box with the LBS_WANTKEYBOARDINPUT style to its owner in response to a WM_KEYDOWN message.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_VSCROLL">
+ <summary>
+The WM_VSCROLL message is sent to a window when a scroll event occurs in the window's standard vertical scroll bar. This message is also sent to the owner of a vertical scroll bar control when a scroll event occurs in the control.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_VSCROLLCLIPBOARD">
+ <summary>
+The WM_VSCROLLCLIPBOARD message is sent to the clipboard owner by a clipboard viewer window when the clipboard contains data in the CF_OWNERDISPLAY format and an event occurs in the clipboard viewer's vertical scroll bar. The owner should scroll the clipboard image and update the scroll bar values.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_WINDOWPOSCHANGED">
+ <summary>
+The WM_WINDOWPOSCHANGED message is sent to a window whose size position or place in the Z order has changed as a result of a call to the SetWindowPos function or another window-management function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_WINDOWPOSCHANGING">
+ <summary>
+The WM_WINDOWPOSCHANGING message is sent to a window whose size position or place in the Z order is about to change as a result of a call to the SetWindowPos function or another window-management function.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_WININICHANGE">
+ <summary>
+An application sends the WM_WININICHANGE message to all top-level windows after making a change to the WIN.INI file. The SystemParametersInfo function sends this message after an application uses the function to change a setting in WIN.INI. Note The WM_WININICHANGE message is provided only for compatibility with earlier versions of the system. Applications should use the WM_SETTINGCHANGE message.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_XBUTTONDBLCLK">
+ <summary>
+Definition Needed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_XBUTTONDOWN">
+ <summary>
+Definition Needed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:xDoofSDK.Hooking.MouseHook.WindowsMessageType.WM_XBUTTONUP">
+ <summary>
+Definition Needed
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:xDoofSDK.MessageBoxSystem.MessageBoxBuilder">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.MessageBoxSystem.MessageBoxBuilder"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.MessageBoxSystem.MessageBoxBuilder.Show">
+ <summary>
+ Affiche le message construit.
+ </summary>
+</member>
+<member name="M:xDoofSDK.MessageBoxSystem.MessageBoxBuilder.CreateMessage(System.String,System.String,xDoofSDK.IconMessageBox,xDoofSDK.ButtonMessageBox)">
+ <summary>
+ Spécifie la construction à <see cref="T:xDoofSDK.MessageBoxSystem.MessageBoxBuilder"/> et créé le message.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Storage.IntStorage">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Storage.IntStorage"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.PushItem(System.String,System.Int32)">
+ <summary>
+ Ajoute un item dans le stockage de <see cref="T:System.Int32"/> ainsi que ca valeur spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.PushItemList(System.String[],System.Int32[])">
+ <summary>
+ Ajoute une <see cref="T:System.Collections.Generic.List`1"/> dans le stockage de <see cref="T:System.Int32"/> ainsi que les valeurs spécifiés.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.ReverseItems">
+ <summary>
+ Inverse l'ordre des éléments des item(s) du stockage.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.ReverseValues">
+ <summary>
+ Inverse l'ordre des éléments des valeur(s) du stockage.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.ReverseItemsWithValues">
+ <summary>
+ Inverse l'ordre des éléments des item(s) et des valeur(s) du stockage.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.SaveToFileStorage(System.String,System.Boolean)">
+ <summary>
+ Sauvegarde le stockage dans un fichier de stockage de xDoofSystem.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si sauvegarder, False dans le cas contraire.</returns>
+ <remarks>REMARQUE: Le fichier est adapté pour le format de stockage pour le système xDoofSystem.</remarks>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.ReadFileStorage(System.String)">
+ <summary>
+ Lis un fichier de stockage de xDoofSystem.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si lu et correctement ajouter, False dans le cas contraire.</returns>
+ <remarks>REMARQUE: Le fichier lui doit être adapté du format de stockage pour le système xDoofSystem.</remarks>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.ReplaceItem(System.String,System.String)">
+ <summary>
+ Remplace l'item spécifié par le nouvelle item spécifié.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.ReplaceItemList(System.String[],System.String[])">
+ <summary>
+ Remplace la liste d'item(s) spécifié par les nouveaux item(s) spécifié.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.ReplaceItemValue(System.String,System.Int32)">
+ <summary>
+ Remplace la valeur de l'item spécifié par une nouvelle valeur.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.ReplaceItemValueList(System.String[],System.Int32[])">
+ <summary>
+ Remplace la liste de valeur(s) des item(s) spécifié par les nouvelles valeur(s).
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.ReplaceItemWithValue(System.String,System.String,System.Int32)">
+ <summary>
+ Remplace l'item spécifié par une nouvelle item ainsi que ca valeur par une nouvelle valeur spécifié.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.ReplaceItemWithValueList(System.String[],System.String[],System.Int32[])">
+ <summary>
+ Remplace les item(s) spécifié par les nouvelles item(s) ainsi que ces valeur(s) par les nouvelles valeur(s) spécifié.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.DeleteItem(System.String)">
+ <summary>
+ Supprime un item dans le stockage de <see cref="T:System.Int32"/> ainsi que ca valeur.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si trouvé et supprimé, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.DeleteAll">
+ <summary>
+ Supprime tout les items dans le stockage de <see cref="T:System.Int32"/> ainsi que toutes ces valeurs associés.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.FindItem(System.String)">
+ <summary>
+ Recherche un item dans le stockage de <see cref="T:System.Int32"/>.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si trouvé, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.FindItemWithReturnValue(System.String)">
+ <summary>
+ Recherche un item dans le stockage de <see cref="T:System.Int32"/> et retourne ça valeur associé.
+ </summary><returns>Retourne la valeur <see cref="T:System.Int32"/> associé si trouvé.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.FindItemWithReturnIndex(System.String)">
+ <summary>
+ Recherche un item dans le stockage de <see cref="T:System.Int32"/> et retourne l'index.
+ </summary><returns>Retourne l'index <see cref="T:System.Int32"/> associé si trouvé, retourne -1 dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.FindItemWithReturnValueList(System.String)">
+ <summary>
+ Recherche un item dans le stockage de <see cref="T:System.Int32"/> et retourne ca valeur associé.
+ </summary><returns>Retourne une <see cref="T:System.Collections.Generic.List`1"/> des valeurs <see cref="T:System.Int32"/> associé trouvés.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.CountItems">
+ <summary>
+ Compte le nombre total d'éléments dans le stockage de <see cref="T:System.Int32"/>.
+ </summary><returns>Retourne le nombre total d'éléments en <see cref="T:System.Int32"/>.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.GetStorage">
+ <summary>
+ Retourne le stockage de <see cref="T:System.Int32"/>.
+ </summary><returns>Retourne une <see cref="T:System.Collections.Generic.List`1"/> du stockage.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.GetStorageValue">
+ <summary>
+ Retourne les valeurs du stockage de <see cref="T:System.Int32"/>.
+ </summary><returns>Retourne une <see cref="T:System.Collections.Generic.List`1"/> des valeurs du stockage.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.SetStorage(System.String[])">
+ <summary>
+ Supprime et remplace le stockage par une liste d'item(s) spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.SetStorageValue(System.Int32[])">
+ <summary>
+ Supprime et remplace les valeurs du stockage par une liste de valeur(s) spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.IntStorage.SetStorageWithValue(System.String[],System.Int32[])">
+ <summary>
+ Supprime et remplace le stockage par une liste de valeur(s) spécifié.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Storage.StringArrayStorage">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Storage.StringArrayStorage"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.PushItem(System.String,System.String[])">
+ <summary>
+ Ajoute un item dans le stockage de <see cref="T:System.String"/> ainsi que ca valeur spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.PushItemList(System.String[],System.String[])">
+ <summary>
+ Ajoute une <see cref="T:System.Collections.Generic.List`1"/> dans le stockage de <see cref="T:System.String"/> ainsi que les valeurs spécifiés.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.ReverseItems">
+ <summary>
+ Inverse l'ordre des éléments des item(s) du stockage.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.ReverseValues">
+ <summary>
+ Inverse l'ordre des éléments des valeur(s) du stockage.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.ReverseItemsWithValues">
+ <summary>
+ Inverse l'ordre des éléments des item(s) et des valeur(s) du stockage.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.SaveToFileStorage(System.String,System.Boolean)">
+ <summary>
+ Sauvegarde le stockage dans un fichier de stockage de xDoofSystem.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si sauvegarder, False dans le cas contraire.</returns>
+ <remarks>REMARQUE: Le fichier est adapté pour le format de stockage pour le système xDoofSystem.</remarks>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.ReadFileStorage(System.String)">
+ <summary>
+ Lis un fichier de stockage de xDoofSystem.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si lu et correctement ajouter, False dans le cas contraire.</returns>
+ <remarks>REMARQUE: Le fichier lui doit être adapté du format de stockage pour le système xDoofSystem.</remarks>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.ReplaceItem(System.String,System.String[])">
+ <summary>
+ Remplace l'item spécifié par le nouvelle item spécifié.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.ReplaceItemList(System.String[],System.String[])">
+ <summary>
+ Remplace la liste d'item(s) spécifié par les nouveaux item(s) spécifié.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.ReplaceItemValue(System.String,System.String[])">
+ <summary>
+ Remplace la valeur de l'item spécifié par une nouvelle valeur.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.ReplaceItemValueList(System.String[],System.String[])">
+ <summary>
+ Remplace la liste de valeur(s) des item(s) spécifié par les nouvelles valeur(s).
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.ReplaceItemWithValue(System.String,System.String,System.String[])">
+ <summary>
+ Remplace l'item spécifié par une nouvelle item ainsi que ca valeur par une nouvelle valeur spécifié.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.ReplaceItemWithValueList(System.String[],System.String[],System.String[])">
+ <summary>
+ Remplace les item(s) spécifié par les nouvelles item(s) ainsi que ces valeur(s) par les nouvelles valeur(s) spécifié.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.DeleteItem(System.String)">
+ <summary>
+ Supprime un item dans le stockage de <see cref="T:System.String"/> ainsi que ca valeur.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si trouvé et supprimé, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.DeleteAll">
+ <summary>
+ Supprime tout les items dans le stockage de <see cref="T:System.String"/> ainsi que toutes ces valeurs associés.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.FindItem(System.String)">
+ <summary>
+ Recherche un item dans le stockage de <see cref="T:System.String"/>.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si trouvé, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.FindItemWithReturnValue(System.String)">
+ <summary>
+ Recherche un item dans le stockage de <see cref="T:System.String"/> et retourne ça valeur associé.
+ </summary><returns>Retourne la valeur <see cref="T:System.String"/> associé si trouvé.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.FindItemWithReturnIndex(System.String)">
+ <summary>
+ Recherche un item dans le stockage de <see cref="T:System.Int32"/> et retourne l'index.
+ </summary><returns>Retourne l'index <see cref="T:System.Int32"/> associé si trouvé, retourne -1 dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.FindItemWithReturnValueList(System.String)">
+ <summary>
+ Recherche un item dans le stockage de <see cref="T:System.Int32"/> et retourne ca valeur associé.
+ </summary><returns>Retourne une <see cref="T:System.Collections.Generic.List`1"/> des valeurs <see cref="T:System.Int32"/> associé trouvés.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.CountItems">
+ <summary>
+ Compte le nombre total d'éléments dans le stockage de <see cref="T:System.String"/>.
+ </summary><returns>Retourne le nombre total d'éléments en <see cref="T:System.String"/>.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.GetStorage">
+ <summary>
+ Retourne le stockage de <see cref="T:System.String"/>.
+ </summary><returns>Retourne une <see cref="T:System.Collections.Generic.List`1"/> du stockage.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.GetStorageValue">
+ <summary>
+ Retourne les valeurs du stockage de <see cref="T:System.String"/>.
+ </summary><returns>Retourne une <see cref="T:System.Collections.Generic.List`1"/> des valeurs du stockage.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.SetStorage(System.String[])">
+ <summary>
+ Supprime et remplace le stockage par une liste d'item(s) spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.SetStorageValue(System.String[])">
+ <summary>
+ Supprime et remplace les valeurs du stockage par une liste de valeur(s) spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringArrayStorage.SetStorageWithValue(System.String[],System.String[])">
+ <summary>
+ Supprime et remplace le stockage par une liste de valeur(s) spécifié.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Storage.StringStorage">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Storage.StringStorage"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.PushItem(System.String,System.String)">
+ <summary>
+ Ajoute un item dans le stockage de <see cref="T:System.String"/> ainsi que ca valeur spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.PushItemList(System.String[],System.String[])">
+ <summary>
+ Ajoute une <see cref="T:System.Collections.Generic.List`1"/> dans le stockage de <see cref="T:System.String"/> ainsi que les valeurs spécifiés.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.ReverseItems">
+ <summary>
+ Inverse l'ordre des éléments des item(s) du stockage.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.ReverseValues">
+ <summary>
+ Inverse l'ordre des éléments des valeur(s) du stockage.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.ReverseItemsWithValues">
+ <summary>
+ Inverse l'ordre des éléments des item(s) et des valeur(s) du stockage.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.SaveToFileStorage(System.String,System.Boolean)">
+ <summary>
+ Sauvegarde le stockage dans un fichier de stockage de xDoofSystem.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si sauvegarder, False dans le cas contraire.</returns>
+ <remarks>REMARQUE: Le fichier est adapté pour le format de stockage pour le système xDoofSystem.</remarks>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.ReadFileStorage(System.String)">
+ <summary>
+ Lis un fichier de stockage de xDoofSystem.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si lu et correctement ajouter, False dans le cas contraire.</returns>
+ <remarks>REMARQUE: Le fichier lui doit être adapté du format de stockage pour le système xDoofSystem.</remarks>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.ReplaceItem(System.String,System.String)">
+ <summary>
+ Remplace l'item spécifié par le nouvelle item spécifié.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.ReplaceItemList(System.String[],System.String[])">
+ <summary>
+ Remplace la liste d'item(s) spécifié par les nouveaux item(s) spécifié.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.ReplaceItemValue(System.String,System.String)">
+ <summary>
+ Remplace la valeur de l'item spécifié par une nouvelle valeur.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.ReplaceItemValueList(System.String[],System.String[])">
+ <summary>
+ Remplace la liste de valeur(s) des item(s) spécifié par les nouvelles valeur(s).
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.ReplaceItemWithValue(System.String,System.String,System.String)">
+ <summary>
+ Remplace l'item spécifié par une nouvelle item ainsi que ca valeur par une nouvelle valeur spécifié.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.ReplaceItemWithValueList(System.String[],System.String[],System.String[])">
+ <summary>
+ Remplace les item(s) spécifié par les nouvelles item(s) ainsi que ces valeur(s) par les nouvelles valeur(s) spécifié.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si remplacer, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.DeleteItem(System.String)">
+ <summary>
+ Supprime un item dans le stockage de <see cref="T:System.String"/> ainsi que ca valeur.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si trouvé et supprimé, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.DeleteAll">
+ <summary>
+ Supprime tout les items dans le stockage de <see cref="T:System.String"/> ainsi que toutes ces valeurs associés.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.FindItem(System.String)">
+ <summary>
+ Recherche un item dans le stockage de <see cref="T:System.String"/>.
+ </summary><returns>Retourne un <see cref="T:System.Boolean"/>, True si trouvé, False dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.FindItemWithReturnValue(System.String)">
+ <summary>
+ Recherche un item dans le stockage de <see cref="T:System.String"/> et retourne ça valeur associé.
+ </summary><returns>Retourne la valeur <see cref="T:System.String"/> associé si trouvé.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.FindItemWithReturnIndex(System.String)">
+ <summary>
+ Recherche un item dans le stockage de <see cref="T:System.String"/> et retourne l'index.
+ </summary><returns>Retourne l'index <see cref="T:System.Int32"/> associé si trouvé, retourne -1 dans le cas contraire.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.FindItemWithReturnValueList(System.String)">
+ <summary>
+ Recherche un item dans le stockage de <see cref="T:System.String"/> et retourne ça valeur associé.
+ </summary><returns>Retourne une <see cref="T:System.Collections.Generic.List`1"/> des valeurs <see cref="T:System.String"/> associé trouvés.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.CountItems">
+ <summary>
+ Compte le nombre total d'éléments dans le stockage de <see cref="T:System.String"/>.
+ </summary><returns>Retourne le nombre total d'éléments en <see cref="T:System.Int32"/>.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.GetStorage">
+ <summary>
+ Retourne le stockage de <see cref="T:System.String"/>.
+ </summary><returns>Retourne une <see cref="T:System.Collections.Generic.List`1"/> du stockage.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.GetStorageValue">
+ <summary>
+ Retourne les valeurs du stockage de <see cref="T:System.String"/>.
+ </summary><returns>Retourne une <see cref="T:System.Collections.Generic.List`1"/> des valeurs du stockage.</returns>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.SetStorage(System.String[])">
+ <summary>
+ Supprime et remplace le stockage par une liste d'item(s) spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.SetStorageValue(System.String[])">
+ <summary>
+ Supprime et remplace les valeurs du stockage par une liste de valeur(s) spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Storage.StringStorage.SetStorageWithValue(System.String[],System.String[])">
+ <summary>
+ Supprime et remplace le stockage par une liste de valeur(s) spécifié.
+ </summary>
+</member>
+<member name="T:xDoofSDK.SystemC.KeyboardController">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.SystemC.KeyboardController"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.KeyboardController.SetKeyDown(System.Windows.Forms.Keys)">
+ <summary>
+ Simule un appuie de touche sans relâcher l'appuie.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.KeyboardController.SetKeyUp(System.Windows.Forms.Keys)">
+ <summary>
+ Simule un relâchement de touche.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.KeyboardController.SetKeyDownUp(System.Windows.Forms.Keys,System.Int32)">
+ <summary>
+ Simule un appuie de touche avec un relâchement.
+ </summary><remarks>Un délai peut être spécifié entre l'appuie et la relâche.</remarks>
+</member>
+<member name="M:xDoofSDK.SystemC.KeyboardController.SetKeyDownUpList(System.Collections.Generic.List{System.Windows.Forms.Keys},System.Int32)">
+ <summary>
+ Simule un appuie de touche avec un relâchement sur une liste de <see cref="T:System.Windows.Forms.Keys"/> spécifié.
+ </summary><remarks>Un délai peut être spécifié entre l'appuie et la relâche.</remarks>
+</member>
+<member name="M:xDoofSDK.SystemC.KeyboardController.SetKeyboardEventCustom(System.Byte,System.Byte,System.Int32,System.Int32,System.Int16,System.Int32)">
+ <summary>
+ Utilisation avancé pour créer son propre événement.
+ </summary><remarks>Lib appelé user32 | Alias: keybd_event | Un délai peut être spécifié avant ou après l'exécution | exAB = 0 avant, exAB = 1 après.</remarks>
+</member>
+<member name="T:xDoofSDK.SystemC.MouseController">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.SystemC.MouseController"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.MouseController.SetPosition(xDoofSDK.SystemC.MouseController.MousePos)">
+ <summary>
+ Modifie la position du curseur.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.MouseController.SetPosition(System.Int32,System.Int32)">
+ <summary>
+ Modifie la position du curseur.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.MouseController.SetPositionList(System.Collections.Generic.List{xDoofSDK.SystemC.MouseController.MousePos})">
+ <summary>
+ Modifie la position du curseur suivi d'une liste <see cref="T:System.Collections.Generic.List`1"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.MouseController.SetPositionList(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32})">
+ <summary>
+ Modifie la position du curseur suivi d'une <see cref="T:System.Collections.Generic.List`1"/> de position X et d'une <see cref="T:System.Collections.Generic.List`1"/> de position Y.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.MouseController.GetPosition">
+ <summary>
+ Récupère la position du curseur et le retourne en <see cref="T:xDoofSDK.SystemC.MouseController.MousePos"/>.
+ </summary>
+ <remarks>Vous pouvez convertir un <see cref="T:xDoofSDK.SystemC.MouseController.MousePos"/> en d'autres types.</remarks>
+</member>
+<member name="M:xDoofSDK.SystemC.MouseController.SetLeftClick(xDoofSDK.SystemC.MouseController.ModeClick)">
+ <summary>
+ Simule un clique gauche.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.MouseController.SetMiddleClick(xDoofSDK.SystemC.MouseController.ModeClick)">
+ <summary>
+ Simule un clique du milieu.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.MouseController.SetRightClick(xDoofSDK.SystemC.MouseController.ModeClick)">
+ <summary>
+ Simule un clique droit.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.MouseController.SetWheel(xDoofSDK.SystemC.MouseController.ModeClick)">
+ <summary>
+ Simule une roulette.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.MouseController.MouseEventCustom(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Utilisation avancé pour créer son propre événement.
+ </summary><remarks>Lib appelé: user32</remarks>
+</member>
+<member name="T:xDoofSDK.SystemC.MouseController.MousePos">
+ <summary>
+ Structure qui stocke les deux points X et Y, conversion en d'autres types possible.
+ </summary>
+</member>
+<member name="F:xDoofSDK.SystemC.MouseController.MousePos.X">
+ <summary>
+ Point X.
+ </summary>
+</member>
+<member name="F:xDoofSDK.SystemC.MouseController.MousePos.Y">
+ <summary>
+ Point Y.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.MouseController.MousePos.ToPoint">
+ <summary>
+ Convertie <see cref="T:xDoofSDK.SystemC.MouseController.MousePos"/> en <see cref="T:System.Drawing.Point"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.MouseController.MousePos.ToSize">
+ <summary>
+ Convertie <see cref="T:xDoofSDK.SystemC.MouseController.MousePos"/> en <see cref="T:System.Drawing.Size"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.MouseController.MousePos.ToString">
+ <summary>
+ Convertie <see cref="T:xDoofSDK.SystemC.MouseController.MousePos"/> en <see cref="T:System.String"/>.
+ </summary>
+</member>
+<member name="T:xDoofSDK.SystemC.NetworkController">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.SystemC.NetworkController"/>.
+ </summary>
+ <remarks>Utiliser les fonctions avec parcimonie.</remarks>
+</member>
+<member name="M:xDoofSDK.SystemC.NetworkController.EnableAdapter(System.Boolean)">
+ <summary>
+ Active l'adaptateur.
+ </summary>
+ <remarks>Un accès du programme en administrateur est requis pour utiliser cette fonction.</remarks>
+</member>
+<member name="M:xDoofSDK.SystemC.NetworkController.DisableAdapter(System.Boolean)">
+ <summary>
+ Désactive l'adaptateur.
+ </summary>
+ ''' <remarks>Un accès du programme en administrateur est requis pour utiliser cette fonction.</remarks>
+</member>
+<member name="M:xDoofSDK.SystemC.NetworkController.HasConnectivity">
+ <summary>
+ Vérifie si une connectivité est disponible
+ </summary>
+</member>
+<member name="T:xDoofSDK.SystemC.VolumeController">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.SystemC.VolumeController"/>.
+ </summary><remarks>Pour initialiser la classe, utiliser la fonction <see cref="M:xDoofSDK.SystemC.VolumeController.InitController(System.IntPtr)"/></remarks>
+</member>
+<member name="M:xDoofSDK.SystemC.VolumeController.InitController(System.IntPtr)">
+ <summary>
+ Initialise le Controller pour le volume système.
+ </summary>
+ <remarks>Par défaut: 'Me.Handle'</remarks>
+</member>
+<member name="M:xDoofSDK.SystemC.VolumeController.UpVolume">
+ <summary>        ''' Augmente le volume du système.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.VolumeController.DownVolume">
+ <summary>
+ Diminue le volume du système.
+ </summary>
+</member>
+<member name="M:xDoofSDK.SystemC.VolumeController.MuteVolume">
+ <summary>
+ Coupe le volume du système.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Tools.Timer">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Tools.Timer"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Tools.Timer.StartTimer">
+ <summary>
+ Lance le chronomètre.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Tools.Timer.StopTimer">
+ <summary>
+ Stop le chronomètre.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Tools.Timer.RestartTimer">
+ <summary>
+ Redémarre le chronomètre.
+ </summary>
+</member>
+<member name="P:xDoofSDK.Tools.Timer.GetResult">
+ <summary>
+ Retourne le temps écoulé en millisecondes.
+ </summary>
+</member>
+<member name="T:xDoofSDK.stringBuilder">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.stringBuilder"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.stringBuilder.Append(System.String,System.Int32)">
+ <summary>
+ Ajoute du String au String à construire.
+ </summary>
+</member>
+<member name="M:xDoofSDK.stringBuilder.GetBuildString">
+ <summary>
+ Récupère le String construit selon les propriétés données.
+ </summary>
+</member>
+<member name="M:xDoofSDK.stringBuilder.GetTotalLength">
+ <summary>
+ Récupère le nombre total d'élément du String construit.
+ </summary>
+</member>
+<member name="M:xDoofSDK.stringBuilder.SetMaxCapacity(System.Int32)">
+ <summary>
+ Assigne la capacité maximum de length à retourné.
+ </summary>
+</member>
+<member name="T:xDoofSDK.ConsoleOptions">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.ConsoleOptions"/>.
+ </summary>
+</member>
+<member name="T:xDoofSDK.ConsoleOptions.InFlux">
+ <summary>
+ Classe des fonctions du flux d'entrée.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.InFlux.ReadEnd">
+ <summary>
+ Lis et retourne tout les caractères entre la position actuelle et la fin du lecteur.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.InFlux.ReadCharLine">
+ <summary>
+ Lis une ligne de caractères à partir du lecteur de texte et retourne les données.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.InFlux.Read">
+ <summary>
+ Lis le caractère suivant à partir du lecteur de texte et retourne l'implémentation.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.InFlux.Peek">
+ <summary>
+ Lis le caractère suivant et retourne le prochain caractère disponible.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.InFlux.CloseAndRelease">
+ <summary>
+ Ferme et libère toutes les ressources.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.WriteLine(System.String)">
+ <summary>
+ Écrit dans le terminateur du flux de sortie.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.Write(System.String,System.Object)">
+ <summary>
+ Écrit dans le terminateur de la ligne active dans le flux de sortie.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.SetColorBackground(System.ConsoleColor)">
+ <summary>
+ Modifie la couleur de font de la console.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.GetColorBackground">
+ <summary>
+ Récupère la couleur de font de la console.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.BeepSound">
+ <summary>
+ Lit le son d'un signal sonore via le haut-parleur.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.ClearConsole">
+ <summary>
+ Efface le contenu de la console.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.EncodingInput(System.Text.Encoding)">
+ <summary>
+ Modifie l'encodage pour lire l'entrée.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.ReadConsole">
+ <summary>
+ Lis le caractère suivant du flux d'entrée.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.ReadLineConsole">
+ <summary>
+  Lit la ligne de caractères suivante du flux d'entrée.
+ </summary>
+</member>
+<member name="M:xDoofSDK.ConsoleOptions.ColorReset">
+ <summary>
+  Remet à zéro les couleurs de la console par défaut.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Converter">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Converter"/>.
+ </summary>
+</member>
+<member name="T:xDoofSDK.ExceptionBuilder">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.ExceptionBuilder"/>.
+ </summary>
+</member>
+<member name="T:xDoofSDK.ExceptionConsole">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.ExceptionConsole"/>.
+ </summary>
+</member>
+<member name="T:xDoofSDK.ExceptionConvert">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.ExceptionConvert"/>.
+ </summary>
+</member>
+<member name="T:xDoofSDK.ExceptionFileSystem">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.ExceptionFileSystem"/>.
+ </summary>
+</member>
+<member name="T:xDoofSDK.ExceptionRandom">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.ExceptionRandom"/>.
+ </summary>
+</member>
+<member name="T:xDoofSDK.ExceptionStorage">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.ExceptionStorage"/>.
+ </summary>
+</member>
+<member name="T:xDoofSDK.ExceptionWinFormBuilder">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.ExceptionWinFormBuilder"/>.
+ </summary>
+</member>
+<member name="T:xDoofSDK.ExternalDll">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.ExternalDll"/>.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Maths">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Maths"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Maths.Small(System.Int32,System.Int32)">
+ <summary>
+ Compare et retourne la valeur la plus petite des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur <see cref="T:System.Int32"/> la plus petite, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Small(System.UInt32,System.UInt32)">
+ <summary>
+ Compare et retourne la valeur la plus petite des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur non signée <see cref="T:System.Int32"/> la plus petite, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Small(System.Decimal,System.Decimal)">
+ <summary>
+ Compare et retourne la valeur la plus petite des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur <see cref="T:System.Decimal"/> la plus petite, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Small(System.Byte,System.Byte)">
+ <summary>
+ Compare et retourne la valeur la plus petite des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur <see cref="T:System.Byte"/> la plus petite, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Small(System.SByte,System.SByte)">
+ <summary>
+ Compare et retourne la valeur la plus petite des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur signée <see cref="T:System.Byte"/> la plus petite, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Small(System.Int64,System.Int64)">
+ <summary>
+ Compare et retourne la valeur la plus petite des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur <see cref="T:System.Int64"/> la plus petite, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Small(System.UInt64,System.UInt64)">
+ <summary>
+ Compare et retourne la valeur la plus petite des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur non signée <see cref="T:System.Int64"/> la plus petite, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Small(System.Int16,System.Int16)">
+ <summary>
+ Compare et retourne la valeur la plus petite des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur <see cref="T:System.Int16"/> la plus petite, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Small(System.UInt16,System.UInt16)">
+ <summary>
+ Compare et retourne la valeur la plus petite des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur non signée <see cref="T:System.Int16"/> la plus petite, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Small(System.Double,System.Double)">
+ <summary>
+ Compare et retourne la valeur la plus petite des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur <see cref="T:System.Double"/> la plus petite, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Big(System.Int32,System.Int32)">
+ <summary>
+ Compare et retourne la valeur la plus grande des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur <see cref="T:System.Int32"/> la plus grande, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Big(System.UInt32,System.UInt32)">
+ <summary>
+ Compare et retourne la valeur la plus grande des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur non signée <see cref="T:System.Int32"/> la plus grande, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Big(System.Decimal,System.Decimal)">
+ <summary>
+ Compare et retourne la valeur la plus petite des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur <see cref="T:System.Decimal"/> la plus grande, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Big(System.Byte,System.Byte)">
+ <summary>
+ Compare et retourne la valeur la plus grande des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur <see cref="T:System.Byte"/> la plus grande, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Big(System.SByte,System.SByte)">
+ <summary>
+ Compare et retourne la valeur la plus grande des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur signée <see cref="T:System.Byte"/> la plus grande, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Big(System.Int64,System.Int64)">
+ <summary>
+ Compare et retourne la valeur la plus grande des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur <see cref="T:System.Int64"/> la plus grande, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Big(System.UInt64,System.UInt64)">
+ <summary>
+ Compare et retourne la valeur la plus grande des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur non signée <see cref="T:System.Int64"/> la plus grande, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Big(System.Int16,System.Int16)">
+ <summary>
+ Compare et retourne la valeur la plus grande des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur <see cref="T:System.Int16"/> la plus grande, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Big(System.UInt16,System.UInt16)">
+ <summary>
+ Compare et retourne la valeur la plus grande des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur non signée <see cref="T:System.Int16"/> la plus grande, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Big(System.Double,System.Double)">
+ <summary>
+ Compare et retourne la valeur la plus grande des deux valeurs spécifié.
+ </summary><returns>Retourne la valeur <see cref="T:System.Double"/> la plus grande, retourne 0 en cas d'égalité.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.MultiplyNumber(System.Int64)">
+ <summary>
+ Multiplie le nombre spécifé par le même nombre.
+ </summary><returns>Retourne la valeur <see cref="T:System.Int64"/> multipliée par lui-même.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.CalcMoyenne(System.Int32[])">
+ <summary>
+ Calcul la moyenne d'une liste spécifié.
+ </summary><returns>Retourne la moyenne en <see cref="T:System.Int64"/>.</returns>
+</member>
+<member name="T:xDoofSDK.Maths.Metrique">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Maths.Metrique"/>, accessible depuis la classe <see cref="T:xDoofSDK.Maths"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.Maths.Metrique.KMtoM(System.Int32)">
+ <summary>
+ Convertie des kilomètres en mètres.
+ </summary><returns>Retourne la valeur convertie en <see cref="T:System.Double"/>.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Metrique.KMtoCM(System.Int32)">
+ <summary>
+ Convertie des kilomètres en centimètres.
+ </summary><returns>Retourne la valeur convertie en <see cref="T:System.Double"/>.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Metrique.KMtoMM(System.Int32)">
+ <summary>
+ Convertie des kilomètres en milimètres.
+ </summary><returns>Retourne la valeur convertie en <see cref="T:System.Double"/>.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Metrique.MtoKM(System.Int32)">
+ <summary>
+ Convertie des mètres en kilomètres.
+ </summary><returns>Retourne la valeur convertie en <see cref="T:System.Double"/>.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Metrique.MtoMM(System.Int32)">
+ <summary>
+ Convertie des mètres en milimètres.
+ </summary><returns>Retourne la valeur convertie en <see cref="T:System.Double"/>.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Metrique.MMtoKM(System.Int32)">
+ <summary>
+ Convertie des milimètres en kilomètres.
+ </summary><returns>Retourne la valeur convertie en <see cref="T:System.Double"/>.</returns>
+</member>
+<member name="M:xDoofSDK.Maths.Metrique.MMtoM(System.Int32)">
+ <summary>
+ Convertie des milimètres en mètres.
+ </summary><returns>Retourne la valeur convertie en <see cref="T:System.Double"/>.</returns>
+</member>
+<member name="T:xDoofSDK.IntFunc">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.IntFunc"/>, utilisation de cette classe avec <see cref="T:System.Int32"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.IntFunc.AddValue(System.Int32,System.Int32)">
+ <summary>
+ Ajoute une valeur spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.IntFunc.RemoveValue(System.Int32,System.Int32)">
+ <summary>
+ Soustrait une valeur spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.IntFunc.MultiplyValue(System.Int32,System.Int32)">
+ <summary>
+ Multiplie une valeur spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.IntFunc.DivideValue(System.Int32,System.Int32)">
+ <summary>
+ Divise la valeur saisie par la valeur spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.IntFunc.Int16ToString(System.Int16)">
+ <summary>
+ Convertie un <see cref="T:System.Int16"/> en <see cref="T:System.String"/>.
+ </summary><returns>-1 si la conversion est impossible</returns>
+</member>
+<member name="M:xDoofSDK.IntFunc.Int32ToString(System.Int32)">
+ <summary>
+ Convertie un <see cref="T:System.Int32"/> en <see cref="T:System.String"/>.
+ </summary><returns>-1 si la conversion est impossible</returns>
+</member>
+<member name="M:xDoofSDK.IntFunc.Int64ToString(System.Int64)">
+ <summary>
+ Convertie un <see cref="T:System.Int64"/> en <see cref="T:System.String"/>.
+ </summary><returns>-1 si la conversion est impossible</returns>
+</member>
+<member name="T:xDoofSDK.StringFunc">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.StringFunc"/>, utilisation de cette classe avec <see cref="T:System.String"/>.
+ </summary>
+</member>
+<member name="F:xDoofSDK.StringFunc.CharMin">
+ <summary>
+ Liste des caractères de l'alphabet en minuscule.
+ </summary>
+</member>
+<member name="F:xDoofSDK.StringFunc.CharMaj">
+ <summary>
+ Liste des caractères de l'alphabet en majuscule.
+ </summary>
+</member>
+<member name="F:xDoofSDK.StringFunc.CharMinSpecialChars">
+ <summary>
+ Liste des caractères de l'alphabet en minuscule, accent y compris.
+ </summary>
+</member>
+<member name="F:xDoofSDK.StringFunc.CharMajSpecialChars">
+ <summary>
+ Liste des caractères de l'alphabet en majuscule, accent y compris.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.ToUpper(System.String)">
+ <summary>
+ Remplace les majuscules dans le texte en minuscule.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.ToLower(System.String)">
+ <summary>
+ Remplace les majuscules dans le texte en minuscule.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.ToUpperSpecialsChars(System.String)">
+ <summary>
+ Remplace les majuscules dans le texte en minuscule ainsi que les caractères spéciaux tels que é / è / à.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.ToLowerSpecialsChars(System.String)">
+ <summary>
+ Remplace les majuscules dans le texte en minuscule ainsi que les caractères spéciaux tels que É / È / À.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.ReverseText(System.String)">
+ <summary>
+ Inverse le texte spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.Find(System.String,System.String)">
+ <summary>
+ Recherche du texte dans le texte saisie, retourne True si trouvé, False si non trouvé.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.FindFirstChar(System.String)">
+ <summary>
+ Recherche le premier caractère en ignorant les espaces et retourne le caractère.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.FindPattern(System.String,System.Char,System.String)">
+ <summary>
+ Recherche et retourne le texte trouver entre le <see cref="T:System.Char"/> du début et le <see cref="T:System.Char"/> de fin.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.RemoveStartBlankSpaces(System.String)">
+ <summary>
+ Retire les espaces blanc du début d'une ligne.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.RemoveEndBlankSpaces(System.String)">
+ <summary>
+ Retire les espaces blanc de la fin d'une ligne.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.RSEBS(System.String)">
+ <summary>
+ Retire les espaces blanc du début d'une ligne et de la fin.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.GetTextBetweenLine(System.String,System.Int32,System.Int32)">
+ <summary>
+ Récupère le contenu positioner entre les lignes spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.GetTextBetweenChar(System.String,System.String,System.String)">
+ <summary>
+ Récupère les caractères positioner entre les <see cref="T:System.Char"/> spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.GetTextBetweenCharPosition(System.String,System.Int32,System.Int32)">
+ <summary>
+ Récupère les caractères positioner entre les positions spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.FindStringCount(System.String,System.String)">
+ <summary>
+ Recherche du texte dans le texte spécifié, retourne le nombre de fois ou le texte a été trouvé.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.WithStart(System.String,System.String)">
+ <summary>
+ Recherche sur le texte saisie si le texte commence par la valeur demandé, retourne True si trouvé, False si non trouvé.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.WithStartMultiOne(System.String,System.String[])">
+ <summary>
+ Recherche sur le texte saisie si le texte commence par l'une des valeurs demandées, retourne True si trouvé, False si non trouvé.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.StringToStringArray(System.String)">
+ <summary>
+ Retourne tout les caractères d'un <see cref="T:System.String"/> dans un String().
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.StringToStringList(System.String)">
+ <summary>
+ Retourne tout les caractères d'un <see cref="T:System.String"/> en <see cref="T:System.Collections.Generic.List`1"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.StringToInt16(System.String)">
+ <summary>
+ Convertie un <see cref="T:System.String"/> en <see cref="T:System.Int16"/>.
+ </summary><returns>-1 si la conversion est impossible</returns>
+</member>
+<member name="M:xDoofSDK.StringFunc.StringToInt32(System.String)">
+ <summary>
+ Convertie un <see cref="T:System.String"/> en <see cref="T:System.Int32"/>.
+ </summary><returns>-1 si la conversion est impossible</returns>
+</member>
+<member name="M:xDoofSDK.StringFunc.StringToInt64(System.String)">
+ <summary>
+ Convertie un <see cref="T:System.String"/> en <see cref="T:System.Int64"/>.
+ </summary><returns>-1 si la conversion est impossible</returns>
+</member>
+<member name="M:xDoofSDK.StringFunc.StringToBoolean(System.String)">
+ <summary>
+ Convertie un <see cref="T:System.String"/> en <see cref="T:System.Boolean"/>.
+ </summary><returns>Nothing si la conversion est impossible</returns>
+</member>
+<member name="M:xDoofSDK.StringFunc.StringToDecimal(System.String)">
+ <summary>
+ Convertie un <see cref="T:System.String"/> en <see cref="T:System.Decimal"/>.
+ </summary><returns>-1 si la conversion est impossible</returns>
+</member>
+<member name="M:xDoofSDK.StringFunc.StringToDouble(System.String)">
+ <summary>
+ Convertie un <see cref="T:System.String"/> en <see cref="T:System.Double"/>.
+ </summary><returns>-1 si la conversion est impossible</returns>
+</member>
+<member name="M:xDoofSDK.StringFunc.WithEnds(System.String,System.String)">
+ <summary>
+ Recherche sur le texte saisie si le texte fini par la valeur demandé, retourne True si trouvé, False si non trouvé.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.Contains(System.String,System.String)">
+ <summary>
+ Recherche dans le texte saisie si il contient la valeur demandée, retourne True si trouvé, False si non trouvé.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.ContainsMulti(System.String,System.String[])">
+ <summary>
+ Recherche dans le texte saisie si il contient les valeurs demandées, retourne True si toute les valeurs sont trouvé, False si non trouvé.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.ContainsMultiOne(System.String,System.String[])">
+ <summary>
+ Recherche dans le texte saisie si il contient l'une des valeurs demandée, retourne True si une des valeurs ont été trouvé, False si non trouvé.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.CountCharacter(System.String,System.Char)">
+ <summary>
+ Retire les espaces blanc du début d'une ligne.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.SplitString(System.String,System.String,System.Int32)">
+ <summary>
+ Retourne un tableau de la séparation d'un string.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.FirstChar(System.String)">
+ <summary>
+ Recherche et retourne le premier caractère.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.SecondChar(System.String)">
+ <summary>
+ Recherche et retourne le deuxième caractère.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.ThirdChar(System.String)">
+ <summary>
+ Recherche et retourne le troisième caractère.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.LastChar(System.String)">
+ <summary>
+ Recherche et retourne le dernier caractère.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.RemoveBlankSpaces(System.String)">
+ <summary>
+ Retire les espaces blanc.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.RemoveSpecifiedText(System.String,System.String)">
+ <summary>
+ Retire le texte spécifié si trouvé.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.RemoveSpecifiedLine(System.String,System.Int32)">
+ <summary>
+ Retire la ligne spécifié, si la ligne est introuvable, retourne le texte spécifié de base.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.RemoveSpecifiedChar(System.String,System.Char)">
+ <summary>
+ Retire le caractère spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.CountTotalLength(System.String,System.Int32)">
+ <summary>
+ Retourne le nombre de caractères total.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.AddTextByContentFile(System.String,System.String,System.String)">
+ <summary>
+ Ajoute du texte tiré du contenu du fichier spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.AddTextByMultipleContentFile(System.String,System.String[],System.String)">
+ <summary>
+ Ajoute du texte tiré du contenu du ou des fichier(s) spécifié(s).
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.AddTextByURL(System.String,System.String)">
+ <summary>
+ Ajoute du texte tiré de l'URL spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.AddTextByURL(System.String,System.Uri)">
+ <summary>
+ Ajoute du texte tiré d'une URL spécifié convertie en <see cref="T:System.Uri"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.StringFunc.SaveStringToFile(System.String,System.String)">
+ <summary>
+ Sauvegarde le contenu du <see cref="T:System.String"/> dans un fichier.
+ </summary>
+</member>
+<member name="T:xDoofSDK.RandomInt">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.RandomInt"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.RandomInt.NextIntNegative">
+ <summary>
+ Retourne un <see cref="T:System.Int32"/> négative.
+ </summary>
+</member>
+<member name="M:xDoofSDK.RandomInt.NextIntPositive">
+ <summary>
+ Retourne un <see cref="T:System.Int32"/> positive.
+ </summary>
+</member>
+<member name="M:xDoofSDK.RandomInt.NextInt">
+ <summary>
+ Retourne un <see cref="T:System.Int32"/> entre le minimum et le maximum d'un <see cref="T:System.Int32"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.RandomInt.NextInt(System.String)">
+ <summary>
+ Retourne un <see cref="T:System.Int32"/> aléatoire entre 0 et la valeur spécifié.
+ </summary>
+</member>
+<member name="M:xDoofSDK.RandomInt.NextInt(System.Int32,System.Int32)">
+ <summary>
+ Retourne un <see cref="T:System.Int32"/> aléatoire entre la valeur minimum et la valeur maximum spécifié.
+ </summary>
+</member>
+<member name="T:xDoofSDK.RandomString">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.RandomString"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.RandomString.NextString">
+ <summary>
+ Retourne un caractère aléatoire de <see cref="T:System.String"/>.
+ </summary>
+</member>
+<member name="M:xDoofSDK.RandomString.NextString(System.Int32)">
+ <summary>
+ Retourne un ou plusieurs caractère aléatoire de <see cref="T:System.String"/> selon le nombre de caractères demandée.
+ </summary>
+</member>
+<member name="M:xDoofSDK.RandomString.NextString(System.String,System.Int32)">
+ <summary>
+ Retourne un ou plusieurs caractère aléatoire de la liste <see cref="T:System.String"/> spécifié et retourne un nombre de caractères selon le nombre de caractères demandée.
+ </summary>
+</member>
+<member name="M:xDoofSDK.RandomString.NextString(System.String[],System.Int32)">
+ <summary>
+ Retourne un ou plusieurs caractère aléatoire de la liste <see cref="T:System.String"/> spécifié et retourne un nombre de caractères selon le nombre de caractères demandée.
+ </summary>
+</member>
+<member name="T:xDoofSDK.OO">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.OO"/>.
+ </summary>
+</member>
+<member name="F:xDoofSDK.OO.basePathOo">
+ <summary>
+ Le chemin source de oo.
+ </summary>
+</member>
+<member name="M:xDoofSDK.OO.ExecuteSource(System.String,System.String)">
+ <summary>
+ Exécute la source saisie.
+ </summary>
+</member>
+<member name="M:xDoofSDK.OO.ExecuteFileSource(System.String)">
+ <summary>
+ Exécute une source selon le fichier source saisie.
+ </summary>
+</member>
+<member name="M:xDoofSDK.OO.ExecuteWebFileSourceSync(System.String)">
+ <summary>
+ Exécute une source selon le fichier source saisie provenant d'internet.
+ </summary>
+</member>
+<member name="M:xDoofSDK.OO.IsOoInstalled(xDoofSDK.OO.CheckLevel)">
+ <summary>
+ Vérifie si le support oo est installer sur l'ordinateur
+ <para><paramref name="cLevel"/> = Le niveau de vérification</para>
+ </summary>
+</member>
+<member name="F:xDoofSDK.OO.CheckLevel.Minimum">
+ <summary>
+ Vérifie seulement la base.
+ </summary>
+</member>
+<member name="F:xDoofSDK.OO.CheckLevel.TreeSystem">
+ <summary>
+ Lie et vérifie selon le fichier d'arbre installer.
+ </summary>
+</member>
+<member name="T:xDoofSDK.Structuration">
+ <summary>
+ Initialise une nouvelle instance de la classe <see cref="T:xDoofSDK.Structuration"/>.
+ </summary>
+</member>
+<member name="F:xDoofSDK.Structuration.Enable">
+ <summary>
+ Objet qui retourne True ou 1.
+ </summary>
+</member>
+<member name="F:xDoofSDK.Structuration.Disable">
+ <summary>
+ Objet qui retourne False ou 0.
+ </summary>
+</member>
+</members>
+</doc>
